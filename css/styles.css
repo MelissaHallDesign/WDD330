@@ -11,7 +11,8 @@ berry: #B9314F
 */
 
 body {
-    background: url(/assets/backgroundimg.jpg) no-repeat;
+    background: url(/assets/backgroundimg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 h1 {
