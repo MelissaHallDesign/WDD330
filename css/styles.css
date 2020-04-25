@@ -11,7 +11,7 @@ berry: #B9314F
 */
 
 body {
-    background-image: url("https://melissahalldesign.github.io/WDD330/assets/backgroundimg.jpg") no-repeat center center fixed;
+    background: url("https://melissahalldesign.github.io/WDD330/assets/backgroundimg.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
