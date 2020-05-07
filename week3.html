@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Melissa Hall Portfolio</h1>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" id="menu">&equiv; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="week1.html">Week 1 Notes</a></li>
+            <li><a href="week2.html">Week 2 Notes</a></li>
+            <li><a href="week2team.html">Week 2 Team Activity</a></li>
+            <li><a href="week3.html">Week 3 Notes</a></li>
+            <li><a href="week3team.html">Week 3 Team Activity</a></li>
+            <li><a href="#">Week 4</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>Week 3</h2>
+        <h3>Notes and Code Examples from<a href="https://javascript.info/object-methods"> Object methods, "this"</a></h3>
+
+        <div class="codesection">
+            <p>Example of Object:</p>
+            <code>
+                let user = {<br>
+                name: "John",<br>
+                age: 30<br>
+                };<br>
+            </code>
+            <p>Example of Method Shorthand:</p>
+            <code>
+                // these objects do the same<br>
+
+                user = {<br>
+                sayHi: function() {<br>
+                alert("Hello");<br>
+                }<br>
+                };<br>
+
+                // method shorthand looks better, right?<br>
+                user = {<br>
+                sayHi() { // same as "sayHi: function()"<br>
+                alert("Hello");<br>
+                }<br>
+                };<br>
+            </code>
+            <p>A method can use the "this" keyword to access an object.</p>
+            <code>
+                let user = {<br>
+                    name: "John",<br>
+                    age: 30,<br><br>
+                  
+                    sayHi() {<br>
+                      // "this" is the "current object"<br>
+                      alert(this.name);<br>
+                    }<br>
+                  
+                  };<br>
+                  
+                  user.sayHi(); // John<br>
+            </code>
+            <p>Arrow functions don't use the "this" keyword</p>
+            <code>
+                let user = {<br>
+                    firstName: "Ilya",<br>
+                    sayHi() {<br>
+                      let arrow = () => alert(this.firstName);<br>
+                      arrow();<br>
+                    }<br>
+                  };<br><br>
+                  
+                  user.sayHi(); // Ilya<br>
+            </code>
+        </div>
+
+        <h4>Notes from JavaScript: Novice to Ninja, 2nd Edition
+        </h4>
+        <p>An object is like a database of values. </p>
+        <p>Objects are often used to keep any related 
+            information and functionality together in the same place.</p>
+            <p></p>
+
+
+        <h5>Code Examples</h5>
+        <p></p>
+        <div class="codesection">
+            <p></p>
+            <p>Example of object literal:</p>
+            <code>
+                const superman = {<br>
+                    name: 'Superman',<br>
+                    'real name': 'Clark Kent',<br>
+                    height: 75,<br>
+                    weight: 235,<br>
+                    hero: true,<br>
+                    villain: false,<br>
+                    allies: ['Batman','Supergirl','Superboy'],<br>
+                    fly() {<br>
+                        return 'Up, up and away!';<br>
+                    }<br>
+                };<br>
+            </code>
+            <br>
+            <p>Questions:</p>
+            
+        </div>
+    </main>
+    <footer>
+        &copy; 2020 | Melissa Hall | WDD330 | Portfolio
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
