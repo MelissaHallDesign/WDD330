@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 4</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Melissa Hall Portfolio</h1>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" id="menu">&equiv; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="week1.html">Week 1 Notes</a></li>
+            <li><a href="week2.html">Week 2 Notes</a></li>
+            <li><a href="week2team.html">Week 2 Team Activity</a></li>
+            <li><a href="week3.html">Week 3 Notes</a></li>
+            <li><a href="week3wesbos.html">Week 3 Team Activity</a></li>
+            <li><a href="week4.html">Week 4 Notes</a></li>
+            <li><a href="week4team.html">Week 4 Team Activity</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>Week 4</h2>
+        <h3>Notes and Code Examples from <i>JavaScript: Novice to Ninja, 2nd Edition</i></h3>
+
+        <div class="codesection">
+            <p>Object oriented programming in JavaScript</p>
+            <p>There are three main concepts in OOP: encapsulation, polymorphism and inheritance.</p>
+            
+            <p>Example of encapsulation:</p>
+            <p>The inner workings are kept hidden inside the object and only the essential functionalities are exposed to the end user</p>
+            
+            <p>Example of polymorphism:</p>
+            <p>The same process can be used for different objects</p>
+
+            <p>Example of inheritance:</p>
+            <p>Take an object that already exists and inherit all its properties and methods. </p>
+           
+            <p>Java and Ruby, are known as class-based languages</p>
+            <p>JavaScript is a prototype-based language</p>
+
+            <p>Modular JavaScript is a self-contained piece of code that provides functions and 
+                methods that can then be used in other files and by other modules.</p>
+        </div>
+
+        <h4>
+
+        </h4>
+        
+
+
+        <h5>Code Examples</h5>
+        <p></p>
+        <div class="codesection">
+            <p></p>
+            <p>Example of object literal notation:</p>
+            <code>
+                const dice = {<br>
+                    sides: 6,<br>
+                    roll() {<br>
+                        return Math.floor(this.sides * Math.random() + 1)<br>
+                    }   <br> 
+                }<br>
+            </code>
+            <p>Example of same code using constructor function:</p>
+            <code>
+                const Dice = function(sides=6){<br>
+                    this.sides = sides;<br>
+                    this.roll = function() {<br>
+                        return Math.floor(this.sides * Math.random() + 1)<br>
+                    }<br>
+                }<br>
+            </code>
+            
+            <p>Questions:</p>
+            <p>I would like to know more about how the object oriented
+                programming in JavaScript compares to Java when building classes.
+            </p>
+        
+        </div>
+    </main>
+    <footer>
+        &copy; 2020 | Melissa Hall | WDD330 | Portfolio
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
