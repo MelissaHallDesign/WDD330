@@ -186,27 +186,29 @@ input {
     border-bottom: 0;
   }
   */
-  .board {
-    width: 320px;
-    height: 320px;
+  .ticTacToe {
+    width: 400px;
+    height: 400px;
   }
-  .board td,
-  .board tr {
-    width: 33.3%;
-    height: 33.3%;
+  .ticTacToe td, .ticTacToe tr {
+    width: 33.33%;
+    height: 33.33%;
   }
-  .board td {
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    font-size: 5em;
+  .ticTacToe td {
+    border-right: 3px #fffae9 solid;
+    border-bottom: 3px #fffae9 solid;
+    font-size: 75px;
     text-align: center;
   }
 
-  .board td:last-child {
+  .ticTacToe td:last-child {
     border-right: 0;
   }
 
-  .board tr:last-child td {
+  .ticTacToe tr:last-child td {
     border-bottom: 0;
+  }
+  .tdText {
+    color: #B9314F;
   }
 /*End of team activity css*/
