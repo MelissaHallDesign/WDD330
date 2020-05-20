@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 5</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Melissa Hall Portfolio</h1>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" id="menu">&equiv; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="week1.html">Week 1 Notes</a></li>
+            <li><a href="week2.html">Week 2 Notes</a></li>
+            <li><a href="week2team.html">Week 2 Team Activity</a></li>
+            <li><a href="week3.html">Week 3 Notes</a></li>
+            <li><a href="week3wesbos.html">Week 3 Team Activity</a></li>
+            <li><a href="week4.html">Week 4 Notes</a></li>
+            <li><a href="week4team.html">Week 4 Team Activity</a></li>
+            <li><a href="week5.html">Week 5 Notes</a></li>
+            <li><a href="week5team.html">Week 5 Team Activity</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>Week 5</h2>
+        <h3>Notes and Code Examples from <i>JavaScript: Novice to Ninja, 2nd Edition</i></h3>
+
+        <div class="codesection">
+            <p>Strict Mode</p>
+            <p>Not using strict mode is often referred to as 'sloppy mode' as it’s forgiving of sloppy programming
+                practices. Strict mode encourages a better quality of JavaScript to be written that befits a ninja
+                programmer, so its use is recommended.
+
+                Strict mode simply requires the following string to be added to the first line of a JavaScript file:</p>
+
+            <code>'use strict';</code>
+            <p>Linting</p>
+            <p>Linting tools such asJS Lint,JS Hint,andES Lintcan be used to test the quality of JavaScript code, beyond
+                simply using strict mode. </p>
+            <p>Passing a lint test is no guarantee that your code is correct, but it will mean it will be more
+                consistent and less likely to have problems.</p>
+            <p>Debugging</p>
+            <p>By debugging in the browser, you can create breakpoints to find where your error is.</p>
+            <p>Debugging using alert()</p>
+            <p>By placing alert() within your code, you can see whether certain sections are running
+                properly or not.
+            </p>
+            <p>Error objects</p>
+            <p>The following error objects can be used to handle potential errors in a program:</p>
+            <ul>
+                <li>EvalError is not used in the current ECMAScript specification and only retained for backwards
+                    compatibility. It was used to identify errors when using the global eval() function.
+                </li>
+                <li>RangeError is thrown when a number is outside an allowable range of values.
+                </li>
+                <li>ReferenceError is thrown when a reference is made to an item that doesn’t exist. For example,
+                    calling a function that hasn't been defined.
+                </li>
+                <li>SyntaxError is thrown when there’s an error in the code’s syntax.
+                </li>
+                <li>TypeError is thrown when there’s an error in the type of value used; for example, a string is used
+                    when a number is expected.
+                </li>
+                <li>URIError is thrown when there’s a problem encoding or decoding the URI.
+                </li>
+                <li>InternalError is a non-standard error that is thrown when an error occurs in the JavaScript engine.
+                    A common cause of this too much recursion.</li>
+            </ul>
+            <p>Throwing Exceptions</p>
+            <p>The throw statement can be applied to any JavaScript expression, causing the execution of the program to stop. </p>
+            <p>Example:</p>
+            <code>
+                function squareRoot(number) {<br>
+                    'use strict';<br>
+                    if (number < 0) {<br>
+                        throw new RangeError('You can't find the square root of negative numbers')<br>
+                    }<br>
+                    return Math.sqrt(number);<br>
+                };<br>
+            </code>
+            <p>Exception Handling with try, catch, and finally</p>
+            <p>If we suspect a piece of code will result in an exception, we can wrap it in a try block</p>
+            <p>This will run the code inside the block as normal, but if an exception occurs it will pass 
+                the error object that is thrown onto a catch block. </p>
+                <p>The code inside the catch block will only run if an exception is thrown inside the try block. 
+                    The error object is automatically passed as a parameter to the catch block. This allows us to 
+                    query the error name, message and stack properties, and deal with it appropriately.</p>
+                    <p>A finally block can be added after a catch block. This will always be executed after the try or catch block, 
+                        regardless of whether an exception occurred or not.</p>
+                        <p>Test-driven Development</p>
+                        <ul>
+                            <li>Similar to pseudo code in Java</li>
+                            <li>Write tests (that initially fail)</li>
+
+                                <li>Write code to pass the tests</li>
+                                
+                               <li> Refactor the code</li>
+                                
+                                <li>Test refactored code</li>
+                                
+                                <li>Write more tests for new features</li>
+                        </ul>
+
+        </div>
+
+        <h4>Code Examples</h4>
+        <p></p>
+        <div class="codesection">
+            <p>A Stack Trace is a sequence of functions or method calls that lead
+                to the point where the error occurred. It’s often not just a single
+                function or method call that causes an error. A stack trace will work
+                backwards from the point at which the error occurred to identify the
+                original function or method that started the sequence. The example below
+                shows how a stack trace can help you find where an error originates from:</p>
+            <code>
+                function three(){ unicorn(); }<br>
+                function two(){ three(); }<br>
+                function one(){ two(); }<br>
+                one();<br>
+                index.html:13 Uncaught ReferenceError: unicorn is not defined<br>
+                at three (index.html:13)<br>
+                at two (index.html:17)<br>
+                at one (index.html:21)<br>
+                at index.html:24`<br>
+            </code>
+            <p>In this example, we have three functions: function one() invokes
+                function two() , which then invokes function three() . Function
+                three() then invokes the unicorn() function that doesn't exist and
+                causes an error. We can use the stack trace to work backwards and
+                see that this error was caused by invoking the function one() in
+                the first place.</p>
+
+
+
+            <p>Questions:</p>
+            <p>I would like to know some ways to practice exception handling in a progressive
+                way (step by step) in writing a basic program that isn't overly complex.
+            </p>
+
+        </div>
+    </main>
+    <footer>
+        &copy; 2020 | Melissa Hall | WDD330 | Portfolio
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
