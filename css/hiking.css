@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 50%;
+    float: left;
+    display: flex;
+}
+
+h1 {
+    color: rgb(241, 207, 163);
+    text-align: center;
+    background-color: rgb(13, 155, 88);
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    text-decoration: none;
+}
+
+h2 {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3,
+p {
+    max-width: 50%;
+    display: flex;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*from solution*/
+
+.hidden {
+    display: none;
+}
+
+.hikeStyles {
+    padding: 0;
+    margin: 1em 0;
+    list-style-type: none;
+}
+
+.hikeStyles div {
+    padding: 0 0.5em;
+}
+
+.hikeStyles li>h2 {
+    text-align: center;
+    background-color: rgb(241, 207, 163);
+    margin-bottom: 0.5em;
+}
+
+.light {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.light>h2 {
+    width: 100%;
+    flex: 1 0 auto;
+}
+
+.light>div {
+    width: 40%;
+    margin-left: 1em;
+    flex: 1 1 auto;
+}
