@@ -48,7 +48,6 @@ function renderHikeList(hikes, parent) {
 
 function renderOneHike(hike) {
     const item = document.createElement("li");
-    
 
     item.innerHTML = ` <h2>${hike.name}</h2>
           <div class="image"><img src="${imgURL}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
@@ -61,12 +60,32 @@ function renderOneHike(hike) {
                       <h3>Difficulty</h3>
                       <p>${hike.difficulty}</p>
                   </div>
-
+                  <button type="button" class="collapsible">View Details</button>
+                  <div class="content">
+                  <h3>Description</h3>
+                  <p>${hike.description}</p>
+                  </div>
                 
           </div>`;
 
     return item;
 }
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
 /*
 function Btn(hike) {
     const button = document.createElement("button");
