@@ -39,24 +39,157 @@
         <h3>Notes and Code Examples from <i>JavaScript: Novice to Ninja, 2nd Edition</i></h3>
 
         <div class="codesection">
-        
-            
+
+            <p>We can create some objects that have a name property,
+                then use the call() method to invoke the sayHello() function,
+                providing each object as an argument.
+                This will then take the value of this in the function:</p>
             <p>Example:</p>
             <code>
-              
+                const clark = { name: 'Clark' };<br>
+                const bruce = { name: 'Bruce' };<br>
+                sayHello.call(clark);<br>
+                'Hello, my name is Clarke'<br>
+                sayHello.call(bruce);<br>
+                'Hello, my name is Bruce' <br>
             </code>
-          
+            <p>If the function that’s called requires any parameters,
+                these need to be provided as arguments after the first argument,
+                which is always the value of this . For example, let's update the
+                sayHello() function to give a more generalized greeting that’s
+                provided as an argument:</p>
+            <code>
+                function sayHello(greeting='Hello'){<br>
+                return `${ greeting }, my name is ${ this.name }`;<br>
+                }<br>
+                sayHello.call(clark, 'How do you do');<br>
+                'How do you do, my name is Clark'<br>
+                sayHello.call(bruce);<br>
+                'Hello, my name is Bruce'<br>
+            </code>
+            <p>Memoization is result caching</p>
+            <p>By calling the function a few times the cache object stores the results</p>
+            <p>An Immediately Invoked Function Expression – or IIFE – (pronounced 'iffy')
+                is an anonymous function that, as the name suggests, is invoked as soon as
+                it’s defined. </p>
+            <code>(function(){<br>
+                const temp = 'World';<br>
+                console.log(`Hello ${temp}`);<br>
+                })();<br>
+                'Hello World'<br>
+            </code>
+            <p>Temporary Variables</p>
+            <p>
+
+                There is no way to remove a variable from a scope once it’s been declared.
+                If a variable is only required temporarily, it may cause confusion if it’s
+                still available later in the code. Even worse, the name of the variable may
+                clash with another piece of code (an external JavaScript library, for example)
+                resulting in errors. Placing any code that uses the temporary variable inside an
+                IIFE will ensure it’s only available while the IIFE is invoked, then it will
+                disappear. The example that follows uses an IIFE to swap the value of two global
+                variables, a and b . This process requires the use of a temporary variable, called
+                temp , which only exists while the IIFE is invoked:
+            </p>
+            <code>
+                let a = 1;<br>
+                let b = 2;<br>
+                (()=>{<br>
+                const temp = a;<br>
+                a = b;<br>
+                b = temp;<br>
+                })();<br>
+                a;<br>
+                2<br>
+                b;<br>
+                1<br>
+                console.log(temp);<br>
+                Error: "temp is not defined"<br>
+            </code>
+            <p>This shows the variable temp does not exist after the function has been invoked.</p>
+            <code>
+                let [a,b] = [1,2];<br>
+                [a,b] = [b,a];<br>
+                a;<br>
+                2<br>
+                b;<br>
+                1<br>
+            </code>
+            <p>INIT Time Branching Example:</p>
+            <code>
+                function ride(){<br>
+                    if (window.unicorn) { <br>
+                        ride = function(){<br>
+                        // some code that uses the brand new and sparkly unicorn methods<br>
+                        return 'Riding on a unicorn is the best!';<br>
+                        }<br>
+                    } else {<br>
+                        ride = function(){<br>
+                        // some code that uses the older pony methods<br>
+                        return 'Riding on a pony is still pretty good';<br>
+                        }<br>
+                    }<br>
+                    return ride();<br>
+                }<br>
+            </code>
+            <p>Currying is a process that involves the partial application of functions.</p><br><br>
+            <p>AJAX</p>
+            <p>Ajax is a technique that allows web pages to communicate asynchronously with a server, 
+                and it dynamically updates web pages without reloading.</p>
 
         </div>
 
         <h4>Code Examples</h4>
         <p></p>
         <div class="codesection">
-            <p></p>
+            <p>Best way to use Strict Mode:</p>
             <code>
-                
+                (function() {<br>
+                    'use strict';<br>
+                // All your code would go inside this function<br>
+                })();<br>
             </code>
-           
+            <p>Example HTML of a to do list</p>
+            <code>
+                <!doctype html>
+
+    <form id='todo' action='https://jsonplaceholder.typicode.com/todos' method='POST'>
+        <input type='text' name='task'  placeholder='Add Task' autofocus required>
+        <button type='submit'>Add Task</button>
+    </form>
+
+            </code>
+            <p>Example Javascript of a to do list</p>
+<code>
+    const form = document.forms['todo'];<br>
+form.addEventListener('submit', addTask, false);<br>
+function addTask(event) {<br>
+    event.preventDefault();<br>
+    const number = form.task.value;<br>
+    const task = {<br>
+        userId: 1,<br>
+        title: form.task.value,<br>
+        completed: false<br>
+    }<br>
+    const data = JSON.stringify(task);<br>
+    const url = 'https://jsonplaceholder.typicode.com/todos';<br>
+    const headers = new Headers({<br>
+        'Accept': 'application/json',<br>
+        'Content-Type': 'application/json'<br>
+    });<br>
+    const request = new Request(url,<br>
+    {<br>
+        method: 'POST',<br>
+        header: headers,<br>
+        body: data<br>
+    }<br>
+    )<br>
+    fetch(request)<br>
+    .then( response => response.json() )<br>
+    .then( task => console.log(`Task saved with an id of ${task.id}`) )<br>
+    .catch( error => console.log('There was an error:', error))<br>
+}<br>
+</code>
 
         </div>
     </main>
