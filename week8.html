@@ -39,26 +39,72 @@
 
         <h2>Week 8</h2>
         <h3>Notes and Code Examples from <i>HTML5 & CSS3 for the Real World: 2nd Edition</i></h3>
+<p>Transforms</p>
+<p>The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew any element on the page.</p>
+<p>We can manipulate an element’s appearance usingtransform functions</p>
+<p>Translation</p>
+<p>Translation functions allow you to move elements left, right, up, or down.</p>
+<p>The translate(x,y) function moves an element x from the left, and y from the top:</p>
+<code>
+    transform: translate(45px, -45px);
+</code>
+<p>Scaling</p>
+<p>The scale(x,y) function scales an element by the defined factors horizontally then vertically. </p>
+<code>transform: scale(1.5, 0.25);</code>
+<p>Rotation</p>
+<p>The rotate() function rotates an element around the point of origin by a specified angle value. </p>
+<code>
+    .ad-ad2 h1:hover span {<br>
+        color: #484848;<br>
+        transform: rotate(10deg) translateX(40px) scale(1.5);<br>
+    }<br>
+</code>
+<p>Skew</p>
+<p>The skew(x,y) function specifies a skew along the x and y axes. </p>
+<code>transform: skew(15deg, 4deg);</code><br><br>
+<p>Canvas</p>
+<p>With HTML5’s Canvas API, we can draw anything we can imagine, all through JavaScript. </p>
+<p>Canvas is a HTML element</p>
+<code>
+    <canvas id="myCanvas" class="myCanvas" width="200" height="200"><br>
+        Sorry! Your browser doesn’t support Canvas.<br>
+    </canvas><br>
+</code>
+<code>
+    .myCanvas {<br>
+        border: dotted 2px black;<br>
+    }<br>
+</code>
+<p>Coloring our canvas:</p>
+<code>
+    var canvas = document.getElementById("myCanvas"); <br>    
+var context = canvas.getContext("2d");<br>
+context.strokeStyle = "red";<br>
+context.fillStyle = "blue";<br>
+</code>
+<p>Changing the opacity:</p>
+<code>
+    var canvas = document.getElementById("myCanvas");    <br>  
+var context = canvas.getContext("2d");<br> 
+context.strokeStyle = "red";<br> 
+context.fillStyle = "rgba(0, 0, 255, 0.5)";<br> 
+</code>
+<p>XML</p>
+<p>XML stands for eXtensible Markup Language. Like HTML, 
+    it’s a markup metalanguage. In plain English, it’s a system meant 
+    to annotate text. Just as we can use HTML tags to wrap our content and 
+    give it meaning, so can XML tags be used to describe data, such as the 
+    content of a file.</p>
+    <p>Raphaël Library</p>
+    <p>Raphaëlis an open-source JavaScript library that makes drawing and animating with SVG much easier.</p>
 
         <div class="codesection">
 
-            <p></p>
-            <p>Example:</p>
-            <code>
-               
-            </code>
-            
+           
 
         </div>
 
-        <h4>Code Examples</h4>
-        <p></p>
-        <div class="codesection">
-            <p></p>
-            <code>
-                
-            </code>
-            <p></p>
+        
             
     </main>
     <footer>
