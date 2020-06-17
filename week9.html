@@ -40,16 +40,34 @@
     <main>
 
         <h2>Week 9</h2>
-        <h3>Notes and Code Examples from <i>HTML5 & CSS3 for the Real World: 2nd Edition</i></h3>
-
+        <h3>Notes and Code Examples from <i>JavaScript: Novice to Ninja, 2nd Edition</i></h3>
+<p>The Browser Object Model (or BOM for short) is a collection of properties and methods 
+    that contain information about the browser and computer screen. </p>
+    <p>The Window Object</p>
+    <p>In a browser environment the global object is the window object, which represents 
+        the browser window that contains a web page.</p>
+        <p>The Document Object</p>
+        <p>Each window object contains a document object. (document.write, etc)</p>
+        <p>Cookies</p>
+        <p>Cookies are also limited to storing up to 4KB of data, although 20 cookies are 
+            allowed per domain, which can add up to quite a lot of data.</p>
+        <p>Cookies take the form of a text file that contain a list of name/value 
+            pairs separated by semicolons. For example, a cookie file might contain the following information:</p>
 <code class="codesection">
-
+    "name=Superman; hero=true; city=Metropolis"
 </code>
-
+<p>Creating cookies</p>
+<p>To create a cookie, you assign it to JavaScript’s “cookie jar”, using the document.cookie property, like so:</p>
 <code class="codesection">
-   
+    document.cookie = 'name=Superman';<br>
+     "name=Superman"
 </code>
-   
+   <p>APIs</p>
+   <p>The Geolocation API is used to obtain the geographical position of the device.</p>
+   <p>Drawing with Canvas</p>
+   <code>
+       <canvas></canvas>
+   </code>
         
             
     </main>
