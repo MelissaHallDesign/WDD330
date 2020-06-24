@@ -42,14 +42,33 @@
     <main>
 
         <h2>Week 10</h2>
-        <h3>Notes and Code Examples </h3>
-<p></p>>
+        <h3>Notes and Code Examples from <i>developer.mozilla.org</i></h3>
+<p>Using the Fetch API</p>
+<p>Example of using fetch to get a JSON file:</p>
 <code class="codesection">
-    
+    fetch('http://example.com/movies.json')<br>
+  .then(response => response.json())<br>
+  .then(data => console.log(data));<br>
 </code>
-<p></p>>
+<p>This way of using fetch is just an HTTP response, not the actual JSON.</p>
+<p>Client-side form validation</p>
+<p>"Before submitting data to the server, it is important to ensure all required 
+    form controls are filled out, in the correct format." </p>
+    <p>Examples of form validation:</p>
+    <ul>
+        <li>This field is required</li>
+        <li>Please enter info in this format: xxx-xxxx-xx</li>
+        <li>Please enter a valid address</li>
+        <li>Password needs to contain a letter number, and special character</li>
+    </ul>
+<p>Validating forms using JavaScript</p>
 <code class="codesection">
-  
+    HTMLButtonElement (represents a <button> element)<br>
+        HTMLFieldSetElement (represents a <fieldset> element)<br>
+        HTMLInputElement (represents an <input> element)<br>
+        HTMLOutputElement (represents an <output> element)<br>
+        HTMLSelectElement (represents a <select> element)<br>
+        HTMLTextAreaElement (represents a <textarea> element)<br>
 </code>
   
 <p>Questions:</p>
