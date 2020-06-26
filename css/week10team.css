@@ -3,16 +3,11 @@ h1 {
     color: #061826;
 }
 
-ul {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #002927;
-}
-
-li {
+ul, li {
     font-family: Arial, Helvetica, sans-serif;
     color: #00524E;
 }
 
-body {
+body, main {
     color: #A7DCBD;
 }
