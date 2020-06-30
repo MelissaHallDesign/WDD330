@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hike Bike Go</title>
+
+    <link rel="stylesheet" href="hbgstyles.css">
+</head>
+<body>
+    <header><div><h1>Salt Lake County Hikes</h1></div></header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" id="menu">&equiv; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="saltlake.html">Salt Lake County</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="herosection">
+            <div class="weathersummary">
+                <p class="weathersummaryheading">Weather Summary</p>
+                <hr>
+                <span class="weathersummary1">Currently:</span>
+                <span class="weathersummary2"><span id="current-temp"></span></span>
+
+                <span class="weathersummary1">High:</span>
+                <span class="weathersummary2"><span id="temp"></span>&deg;</span>
+
+                <span class="weathersummary1">Wind Chill:</span>
+                <span class="weathersummary2"><span id="calc"></span>&deg;</span>
+
+                <span class="weathersummary1">Humidity:</span>
+                <span class="weathersummary2"><span id="humidity">&deg;</span></span>
+
+                <span class="weathersummary1">Wind Speed:</span>
+                <span class="weathersummary2"><span id="speed"></span> mph</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2020 | Melissa Hall | WDD330 | <a href="https://openweathermap.org/api">Open Weather</a>
+    </footer>
+    <script src="hbgmain.js"></script>
+</body>
+</html>

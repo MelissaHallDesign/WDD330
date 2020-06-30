@@ -1,0 +1,20 @@
+//colors
+$color1: #A31621; //red
+$color2: #E06D06; //orange
+$color3: #FFC53A; //yellow
+$color4: #3E6336; //green
+$color5: #65A7CA; //sky blue
+$color6: #313E50; //navy
+$color7: #4C3220; //brown
+$color8: #E7D7C1; //tan
+$color9: #FFF3D6; //off-white
+
+h1 {
+    background-color: $color5;
+    color: $color9;
+}
+
+p {
+    background-color: $color4;
+    color: $color9;
+}

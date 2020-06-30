@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Lato&family=Source+Sans+Pro&display=swap");
+h1 {
+  background-color: #65A7CA;
+  color: #FFF3D6;
+}
+
+p {
+  background-color: #3E6336;
+  color: #FFF3D6;
+}
+
+h1 {
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  background: url("../assets/HBG1.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=hbgstyles.css.map */
