@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hike Bike Go</title>
+    <link rel="stylesheet" href="hbgstyles.css">
+</head>
+<body>
+    <header><div><h1>Hike Bike Go</h1></div></header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" id="menu">&equiv; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="mainsection">
+            <h2>Bryce Canyon</h2>
+            <div class="weathersection">
+                <p class="weatherheading">Weather Summary for Moab, UT</p>
+               
+                <span class="weatherlabel">Currently:</span>
+                <span class="weatherdata"><span id="current-temp"></span></span>
+
+                <span class="weatherlabel">High:</span>
+                <span class="weatherdata"><span id="temp"></span>&deg;</span>
+
+                <span class="weatherlabel">Wind Chill:</span>
+                <span class="weatherdata"><span id="calc"></span>&deg;</span>
+
+                <span class="weatherlabel">Humidity:</span>
+                <span class="weatherdata"><span id="humidity">&deg;</span></span>
+
+                <span class="weatherlabel">Wind Speed:</span>
+                <span class="weatherdata"><span id="speed"></span> mph</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2020 | Melissa Hall | WDD330 | Weather Data courtesy of<a href="https://openweathermap.org/api"> openweathermap.org</a>
+    </footer>
+    <script src="js/hbgmain.js"></script>
+    <script src="js/hbgWeatherAPI.js"></script>
+</body>
+</html>

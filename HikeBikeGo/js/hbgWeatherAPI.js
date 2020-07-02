@@ -27,3 +27,22 @@ fetch(ArchesapiURL)
     document.getElementById('calc').innerHTML = 'N/A';
 }
 }
+
+const BryceapiURL = "https://api.openweathermap.org/data/2.5/weather?lat=37.63&lon=111.98&units=imperial&APPID=8edd374362f96360d97da10d2909e8b7";
+//37.6348165,-111.980871
+
+fetch(BryceapiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    //console.log(jsObject);
+    document.getElementById('current-temp')
+    .textContent = jsObject.weather[0].description;
+    document.getElementById('temp')
+    .textContent = jsObject.main.temp_max;
+    document.getElementById('humidity')
+    .textContent = jsObject.main.humidity;
+    document.getElementById('speed')
+    .textContent = jsObject.wind.speed;
+
+    runWindChill();
+  });

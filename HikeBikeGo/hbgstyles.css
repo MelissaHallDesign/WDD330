@@ -4,14 +4,38 @@ h1 {
   color: #FFF3D6;
 }
 
+h2 {
+  background-color: #3E6336;
+  color: #FFF3D6;
+}
+
 p {
   background-color: #3E6336;
   color: #FFF3D6;
 }
 
+.homeButtons {
+  background-color: #3E6336;
+  color: #E7D7C1;
+}
+
 footer {
   background-color: #65A7CA;
   color: #E7D7C1;
+}
+
+nav ul li {
+  border: 1px solid #E7D7C1;
+  display: none;
+  background-color: #4C3220;
+}
+
+nav ul li a {
+  color: #E7D7C1;
+}
+
+a:hover {
+  color: #FFC53A;
 }
 
 .weatherheading {
@@ -32,8 +56,24 @@ footer {
   color: #65A7CA;
 }
 
-h1 {
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+}
+
+h1, h2 {
   font-family: "Cabin", sans-serif;
+}
+
+.homeButtons {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  border-radius: 15px 15px 15px 15px;
 }
 
 footer {
@@ -61,12 +101,16 @@ body {
   background-size: cover;
 }
 
+h1, h2 {
+  text-align: center;
+  padding: 15px;
+}
+
 .mainsection {
   position: relative;
 }
 
 nav ul {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -75,27 +119,21 @@ nav ul li:first-child {
   display: block;
 }
 
-nav ul li {
-  border: 1px solid #3A2618;
-  display: none;
-  background-color: #FFF8A9;
-}
-
 nav ul li a {
   display: block;
   padding: 10px;
-  text-decoration: none;
-  color: #004643;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-}
-
-a:hover {
-  color: #B9314F;
 }
 
 .open li {
   display: block;
+}
+
+.homeButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 50%;
+  padding: 15px;
+  margin: 15px;
 }
 
 footer {
@@ -110,8 +148,7 @@ footer {
 
 .weathersection {
   padding: 5px;
-  max-width: 90%;
-  position: absolute;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -132,6 +169,7 @@ footer {
 
 .weatherheading {
   grid-column-end: 2 span;
+  margin: 5px;
 }
 
 /*

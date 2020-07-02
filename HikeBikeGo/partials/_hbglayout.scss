@@ -2,12 +2,17 @@ body {
     background-image: url("/assets/HBG1.jpg") no-repeat center center fixed;
     background-size: cover;
 }
+
+h1, h2 {
+    text-align: center;
+    padding: 15px;
+}
+
 .mainsection {
     position: relative;
 }
 
 nav ul {
-    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -16,28 +21,22 @@ nav ul li:first-child {
     display: block;
 }
 
-nav ul li {
-    border: 1px solid #3A2618;
-    display: none;
-    background-color: #FFF8A9;
-}
-
 nav ul li a {
     display: block;
     padding: 10px;
-    text-decoration: none;
-    color: #004643;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-a:hover {
-    color: #B9314F;
 }
 
 .open li {
     display: block;
 
+}
+
+.homeButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50%;
+    padding: 15px;
+    margin: 15px;
 }
 
 footer {
@@ -53,10 +52,10 @@ footer {
 //Weather Data Styles
 .weathersection {
     padding: 5px;
-    max-width: 90%;
+    max-width: 100%;
     //top: 25px;
     //left: 25px;
-    position: absolute;
+    //position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -76,6 +75,7 @@ footer {
 }
 .weatherheading {
     grid-column-end: 2 span;
+    margin: 5px;
 }
 
 //End of Weather Data Styles

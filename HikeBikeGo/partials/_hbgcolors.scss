@@ -14,14 +14,38 @@ h1 {
     color: $color9;
 }
 
+h2 {
+    background-color: $color4;
+    color: $color9
+}
+
 p {
     background-color: $color4;
     color: $color9;
 }
 
+.homeButtons {
+    background-color: $color4;
+    color: $color8;
+}
+
 footer {
   background-color: $color5;
   color: $color8;
+}
+
+nav ul li {
+    border: 1px solid $color8;
+    display: none;
+    background-color: $color7;
+}
+
+nav ul li a {
+    color: $color8;
+}
+
+a:hover {
+    color: $color3;
 }
 
 //Weather

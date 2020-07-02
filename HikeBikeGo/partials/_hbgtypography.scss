@@ -3,8 +3,24 @@ $font2: 'Source Sans Pro', sans-serif; //Source Sans Pro
 $font3: 'Lato', sans-serif; //Lato
 //$font4:; //Impact
 
-h1 {
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: $font2;
+    font-size: 18px;
+}
+
+h1, h2 {
     font-family: $font1;
+}
+
+.homeButtons {
+    font-family: $font3;
+    text-decoration: none;
+    border-radius: 15px 15px 15px 15px;
 }
 
 footer {
