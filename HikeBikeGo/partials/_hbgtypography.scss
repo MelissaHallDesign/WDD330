@@ -6,3 +6,25 @@ $font3: 'Lato', sans-serif; //Lato
 h1 {
     font-family: $font1;
 }
+
+footer {
+    font-family: $font3;
+}
+
+//Weather
+
+.weatherheading {
+    font-size: 20px;
+    font-family: $font2;
+    text-align: center;
+}
+
+.weatherlabel {
+    font-size: 17px;
+    font-family: $font2;
+}
+
+.weatherdata {
+    font-size: 17px;
+    font-family: $font2;
+}

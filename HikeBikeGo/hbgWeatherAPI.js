@@ -1,7 +1,7 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=8edd374362f96360d97da10d2909e8b7";
+const ArchesapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5543307&units=imperial&APPID=8edd374362f96360d97da10d2909e8b7";
 
 
-fetch(apiURL)
+fetch(ArchesapiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     //console.log(jsObject);

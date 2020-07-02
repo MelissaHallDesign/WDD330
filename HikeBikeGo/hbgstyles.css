@@ -9,13 +9,176 @@ p {
   color: #FFF3D6;
 }
 
+footer {
+  background-color: #65A7CA;
+  color: #E7D7C1;
+}
+
+.weatherheading {
+  background-color: #313E50;
+  color: #E7D7C1;
+}
+
+.weathersection {
+  background-color: #313E50;
+  box-shadow: inset 0 0 5px #65A7CA;
+}
+
+.weatherlabel {
+  color: #FFF3D6;
+}
+
+.weatherdata {
+  color: #65A7CA;
+}
+
 h1 {
   font-family: "Cabin", sans-serif;
 }
 
+footer {
+  font-family: "Lato", sans-serif;
+}
+
+.weatherheading {
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+
+.weatherlabel {
+  font-size: 17px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.weatherdata {
+  font-size: 17px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 body {
-  background: url("../assets/HBG1.jpg") no-repeat center center fixed;
+  background-image: url("/assets/HBG1.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+
+.mainsection {
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li:first-child {
+  display: block;
+}
+
+nav ul li {
+  border: 1px solid #3A2618;
+  display: none;
+  background-color: #FFF8A9;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #004643;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #B9314F;
+}
+
+.open li {
+  display: block;
+}
+
+footer {
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+
+.weathersection {
+  padding: 5px;
+  max-width: 90%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.weathersection span:nth-child(even) {
+  padding-left: 5px;
+}
+
+.weatherlabel {
+  padding: 5px;
+  text-align: right;
+}
+
+.weatherdata {
+  padding: 5px;
+  text-align: left;
+}
+
+.weatherheading {
+  grid-column-end: 2 span;
+}
+
+/*
+
+.herosection = mainsection
+.weathersummary = weathersection
+.weathersummary1 = weatherlabel
+.weathersummary2 = weatherdata
+.weathersummaryheading = weatherheading
+.herosection {
+    position: relative;
+
+    .weathersummary {
+    background-color: hsl(350, 74%, 26%, .75);
+    padding: 5px;
+    max-width: 60%;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    box-shadow: inset 0 0 5px #e59500;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.weathersummary span:nth-child(even){
+    padding-left: 5px;
+}
+.weathersummary1 {
+    color: #fafaff;
+    font-size: 15px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+.weathersummary2 {
+    color: #e59500;
+    font-size: 15px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.weathersummaryheading {
+    color: #fafaff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    grid-column-end: 2 span;
+}
+*/
 
 /*# sourceMappingURL=hbgstyles.css.map */

@@ -18,3 +18,28 @@ p {
     background-color: $color4;
     color: $color9;
 }
+
+footer {
+  background-color: $color5;
+  color: $color8;
+}
+
+//Weather
+
+.weatherheading {
+    background-color: $color6;
+    color: $color8;
+}
+
+.weathersection {
+    background-color: $color6;
+    box-shadow: inset 0 0 5px $color5;
+}
+
+.weatherlabel {
+    color: $color9;
+}
+
+.weatherdata {
+    color: $color5;
+}
