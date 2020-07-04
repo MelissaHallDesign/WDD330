@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Lato&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Lato&family=Rammetto+One&family=Source+Sans+Pro&family=Trade+Winds&display=swap");
 h1 {
   background-color: #65A7CA;
   color: #FFF3D6;
@@ -66,12 +66,17 @@ nav ul li a {
   font-size: 18px;
 }
 
-h1, h2 {
-  font-family: "Cabin", sans-serif;
+h1 {
+  font-family: "Trade Winds", cursive;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Trade Winds", cursive;
 }
 
 .homeButtons {
-  font-family: "Lato", sans-serif;
+  font-family: "Trade Winds", cursive;
   text-decoration: none;
   border-radius: 15px 15px 15px 15px;
 }
@@ -128,12 +133,20 @@ nav ul li a {
   display: block;
 }
 
-.homeButtons {
+.buttonContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 50%;
+}
+
+.homeButtons {
+  display: grid;
   padding: 15px;
   margin: 15px;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
 }
 
 footer {

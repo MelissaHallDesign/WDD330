@@ -1,6 +1,8 @@
 $font1: 'Cabin', sans-serif; //Cabin
 $font2: 'Source Sans Pro', sans-serif; //Source Sans Pro
 $font3: 'Lato', sans-serif; //Lato
+$font4: 'Rammetto One', cursive; //Rammetto One
+$font5: 'Trade Winds', cursive; //Trade Winds
 //$font4:; //Impact
 
 nav ul {
@@ -12,13 +14,16 @@ nav ul li a {
     font-family: $font2;
     font-size: 18px;
 }
-
-h1, h2 {
-    font-family: $font1;
+h1 {
+    font-family: $font5;
+    font-size: 50px;
+}
+h2 {
+    font-family: $font5;
 }
 
 .homeButtons {
-    font-family: $font3;
+    font-family: $font5;
     text-decoration: none;
     border-radius: 15px 15px 15px 15px;
 }

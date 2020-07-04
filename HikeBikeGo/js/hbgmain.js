@@ -25,3 +25,10 @@ lat, lon coordinates of the location of your interest
 Examples of API calls:
 api.openweathermap.org/data/2.5/weather?lat=35&lon=139
 */
+$(document).ready(function() {
+  
+    $(".showDetails dt a").click(function(){
+      //alert("click")
+      $(this).parent().next('dd').toggle();
+    });
+  });

@@ -1,0 +1,11 @@
+{
+    "hikes" : [
+        {
+            "location" : "Arches National Park, Moab, UT",
+            "difficulty" : "Medium",
+            "length" : "3 miles",
+            "elevation" : "610 feet",
+            "description" : "A medium difficulty hike to the most well-known arch within Arches National Park."
+        }
+    ]
+}

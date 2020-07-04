@@ -30,13 +30,21 @@ nav ul li a {
     display: block;
 
 }
-
-.homeButtons {
+.buttonContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 50%;
+}
+.homeButtons {
+    display: grid;
+    //grid-template-columns: 1fr 1fr;
     padding: 15px;
     margin: 15px;
+    display: grid;
+    //max-width: 30%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
 }
 
 footer {
