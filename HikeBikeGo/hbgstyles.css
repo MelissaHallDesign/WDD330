@@ -56,6 +56,16 @@ a:hover {
   color: #65A7CA;
 }
 
+.hikeDisplay h3 {
+  color: #FFF3D6;
+  background-color: #E06D06;
+}
+
+.hikeDisplay p {
+  color: #4C3220;
+  background-color: #FFF3D6;
+}
+
 nav ul {
   list-style: none;
 }
@@ -101,6 +111,10 @@ footer {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.hikeDisplay h3 {
+  font-family: "Trade Winds", cursive;
+}
+
 body {
   background-image: url("/assets/HBG1.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -133,10 +147,6 @@ nav ul li a {
   display: block;
 }
 
-.openDetails {
-  display: block;
-}
-
 .buttonContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -158,7 +168,6 @@ footer {
   margin: 0 auto;
   text-align: center;
   display: block;
-  position: absolute;
   bottom: 0;
   width: 90%;
 }
@@ -187,6 +196,16 @@ footer {
 .weatherheading {
   grid-column-end: 2 span;
   margin: 5px;
+}
+
+.hikeDisplay h3 {
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.hikeDisplay p {
+  padding: 10px;
+  margin: 0;
 }
 
 /*

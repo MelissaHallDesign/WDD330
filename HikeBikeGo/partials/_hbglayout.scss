@@ -31,10 +31,10 @@ nav ul li a {
 
 }
 
-.openDetails {
-    display: block;
+// .openDetails {
+//     display: block;
 
-}
+// }
 .buttonContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,7 +57,7 @@ footer {
     margin: 0 auto;
     text-align: center;
     display: block;
-    position: absolute;
+    //position: absolute;
     bottom: 0;
     width: 90%;
 }
@@ -92,6 +92,20 @@ footer {
 }
 
 //End of Weather Data Styles
+
+//Hike Styles
+.hikeDisplay h3 {
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.hikeDisplay p {
+    padding: 10px;
+    margin: 0;
+}
+
+
+
 
 
 /*

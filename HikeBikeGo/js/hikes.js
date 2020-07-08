@@ -9,7 +9,6 @@ fetch(requestURL)
         for (let i = 0; i < hikes.length; i++) { 
             let hike = document.createElement('div');
             let h3 = document.createElement('h3');
-            //let hikeName = document.createElement('p');
             let hikeName = document.createElement('p');
             let location = document.createElement('p');
             let difficulty = document.createElement('p');
@@ -17,13 +16,12 @@ fetch(requestURL)
             let elevation = document.createElement('p');
             let description = document.createElement('p');
             h3.textContent = hikes[i].hikeName;
-            location.textContent = hikes[i].location;
-            difficulty.textContent = hikes[i].difficulty;
-            length.textContent = hikes[i].length;
-            elevation.textContent = hikes[i].elevation;
-            description.textContent = hikes[i].description;
+            location.textContent = 'Location: ' + hikes[i].location;
+            difficulty.textContent = 'Difficulty: ' + hikes[i].difficulty;
+            length.textContent = 'Length: ' + hikes[i].length;
+            elevation.textContent = 'Elevation: ' + hikes[i].elevation;
+            description.textContent = 'Description: ' + hikes[i].description;
             hike.appendChild(h3);
-            //hike.appendChild(hikeName);
             hike.appendChild(hikeName);
             hike.appendChild(location);
             hike.appendChild(difficulty);
@@ -33,3 +31,10 @@ fetch(requestURL)
             document.querySelector('div.hikeDisplay').appendChild(hike);
         }
     });
+
+    // function toggleMenu() {
+    //     document.querySelector('#showHike').classList.toggle('openDetails');
+    //   }
+    //   document.querySelector('#details').addEventListener('click', toggleMenu);
+
+    
