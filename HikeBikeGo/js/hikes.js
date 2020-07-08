@@ -8,20 +8,22 @@ fetch(requestURL)
         //console.table(jsonObject); //temporary testing
         for (let i = 0; i < hikes.length; i++) { 
             let hike = document.createElement('div');
-            //let h3 = document.createElement('h3');
+            let h3 = document.createElement('h3');
+            //let hikeName = document.createElement('p');
             let hikeName = document.createElement('p');
             let location = document.createElement('p');
             let difficulty = document.createElement('p');
             let length = document.createElement('p');
             let elevation = document.createElement('p');
             let description = document.createElement('p');
-            hikeName.textContent = hikes[i].hikeName;
+            h3.textContent = hikes[i].hikeName;
             location.textContent = hikes[i].location;
             difficulty.textContent = hikes[i].difficulty;
             length.textContent = hikes[i].length;
             elevation.textContent = hikes[i].elevation;
             description.textContent = hikes[i].description;
-            //hike.appendChild(h3);
+            hike.appendChild(h3);
+            //hike.appendChild(hikeName);
             hike.appendChild(hikeName);
             hike.appendChild(location);
             hike.appendChild(difficulty);
