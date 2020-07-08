@@ -133,6 +133,10 @@ nav ul li a {
   display: block;
 }
 
+.openDetails {
+  display: block;
+}
+
 .buttonContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;

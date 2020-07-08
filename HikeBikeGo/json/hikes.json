@@ -1,6 +1,7 @@
 {
     "hikes" : [
         {
+            "hikeName" : "Delicate Arch Trail",
             "location" : "Arches National Park, Moab, UT",
             "difficulty" : "Medium",
             "length" : "3 miles",
