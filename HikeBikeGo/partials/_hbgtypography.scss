@@ -55,3 +55,16 @@ footer {
 .hikeDisplay h3 {
     font-family: $font5;
 }
+
+.hikeDisplay p {
+    font-family: $font2;
+}
+
+.favorite:after {
+        content: ' \Z606';
+        color: yellow;
+}
+.favorite:hover:after {
+    content: ' \Z606';
+    color: yellow;
+}

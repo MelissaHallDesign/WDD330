@@ -3,6 +3,34 @@ function toggleMenu() {
 }
 document.querySelector('#menu').addEventListener('click', toggleMenu);
 
+// //Favorite Hike Using localStorage
+// //Use empty array to get favorites
+// const fave = JSON.parse(localStorage.getItem('fave'));
+// //Add the class 'star' on each favorited item
+// fave.forEach(function(favorites) {
+//   document.getElementById(favorites).className = 'star';
+// });
+
+// //Add event listener to star the items
+// document.querySelector('.favorite').addEventListener('click', function(e) {
+//   var id = e.target.id,
+//   item = e.target,
+//   index = fave.indexOf(id);
+// // return if target doesn't have an id (shouldn't happen)
+// if (!id) return;
+// // item is not favorite
+// if (index == -1) {
+// fave.push(id);
+// item.className = 'star';
+// // item is already favorite
+// } else {
+// fave.splice(index, 1);
+// item.className = '';
+// }
+// // store array in local storage
+// localStorage.setItem('fave', JSON.stringify(fave));
+// });
+
 // function toggleMenu() {
 //   document.querySelector('#showHike').classList.toggle('openDetails');
 // }

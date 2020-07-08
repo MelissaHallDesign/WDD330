@@ -115,6 +115,20 @@ footer {
   font-family: "Trade Winds", cursive;
 }
 
+.hikeDisplay p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.favorite:after {
+  content: " Z606";
+  color: yellow;
+}
+
+.favorite:hover:after {
+  content: " Z606";
+  color: yellow;
+}
+
 body {
   background-image: url("/assets/HBG1.jpg") no-repeat center center fixed;
   background-size: cover;
