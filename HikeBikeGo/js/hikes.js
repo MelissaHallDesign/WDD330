@@ -8,7 +8,22 @@ fetch(requestURL)
         //console.table(jsonObject); //temporary testing
         for (let i = 0; i < hikes.length; i++) { 
             let hike = document.createElement('div');
-            let h3 = document.createElement('h3');
+            let h3 = document.createElement('h3'); //Hike Names
+            //h3.setAttribute('id', hikes[i].hikeName);
+            h3.setAttribute('id', 'favorite'); //id of 'favorite' set to h3 hike names
+            h3.addEventListener('click', (e) => {
+                console.log(e.target.id);
+            });
+            let h4 = document.createElement('h4'); //'Show Details'
+            //h4.setAttribute('id', hikes[i].details);
+            h4.setAttribute('id', 'showDetails'); //id of 'showDetails' set to h4 show details
+            h4.addEventListener('click', (e) => {
+                console.log(e.target.id);
+            });
+            let details = document.createElement('p');
+            let hike1 = document.createElement('div');
+            hike1.className = 'hidden';
+            let h5 = document.createElement('h5'); // Hike location aka Moab etc
             let hikeName = document.createElement('p');
             let location = document.createElement('p');
             let difficulty = document.createElement('p');
@@ -16,18 +31,24 @@ fetch(requestURL)
             let elevation = document.createElement('p');
             let description = document.createElement('p');
             h3.textContent = hikes[i].hikeName;
-            location.textContent = 'Location: ' + hikes[i].location;
+            h4.textContent = 'Show Details ' + hikes[i].details;
+            h5.textContent = 'Location: ' + hikes[i].location;
+            //location.textContent = 'Location: ' + hikes[i].location;
             difficulty.textContent = 'Difficulty: ' + hikes[i].difficulty;
             length.textContent = 'Length: ' + hikes[i].length;
             elevation.textContent = 'Elevation: ' + hikes[i].elevation;
             description.textContent = 'Description: ' + hikes[i].description;
             hike.appendChild(h3);
-            hike.appendChild(hikeName);
-            hike.appendChild(location);
-            hike.appendChild(difficulty);
-            hike.appendChild(length);
-            hike.appendChild(elevation);
-            hike.appendChild(description);
+            hike.appendChild(h4);
+            hike.appendChild(details);
+            hike1.appendChild(hikeName);
+            hike1.appendChild(h5);
+            hike1.appendChild(location);
+            hike1.appendChild(difficulty);
+            hike1.appendChild(length);
+            hike1.appendChild(elevation);
+            hike1.appendChild(description);
+            hike.appendChild(hike1);
             document.querySelector('div.hikeDisplay').appendChild(hike);
         }
     });

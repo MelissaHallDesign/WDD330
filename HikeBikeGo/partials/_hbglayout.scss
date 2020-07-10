@@ -98,10 +98,27 @@ footer {
     padding: 15px;
     margin-bottom: 0;
 }
+.hikeDisplay h4 {
+    padding: 5px;
+    margin: 0;
+}
 
 .hikeDisplay p {
     padding: 10px;
     margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+#favorite:after {
+    content: '      \2661';
+}
+#showDetails:after {
+    display: block;
+    :after {
+        content: '      \2192';
+    }
 }
 
 

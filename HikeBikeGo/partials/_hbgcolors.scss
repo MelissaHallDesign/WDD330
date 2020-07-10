@@ -71,7 +71,18 @@ a:hover {
     color: $color9;
     background-color: $color2;
 }
+.hikeDisplay h4 {
+    color: $color6;
+    background-color: $color3;
+}
 .hikeDisplay p {
     color: $color7;
     background-color: $color9;
+}
+
+#favorite:after {
+    color: $color1;
+}
+#showDetails:after {
+    color: $color6;
 }
