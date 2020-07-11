@@ -3,10 +3,10 @@ function toggleMenu() {
 }
 document.querySelector('#menu').addEventListener('click', toggleMenu);
 
-// function hikeDetails() {
-//     document.querySelector('#Details').classList.toggle('hidden');
-// }
-// document.querySelector('#hikeDetails').addEventListener('click', hikeDetails);
+function hikeDetails() {
+    document.querySelector('#hikeDetails').classList.toggle('hidden');
+}
+document.querySelector('#Details').removeEventListener('click', hikeDetails);
 
 
 // function hikeDetails() {
