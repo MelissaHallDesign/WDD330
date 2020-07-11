@@ -1,0 +1,31 @@
+{
+    "saltlakehikes" : [
+        {
+            "hikeName" : "Delicate Arch Trail",
+            "details" : "->",
+            "location" : "Arches National Park, Moab, UT",
+            "difficulty" : "Medium",
+            "length" : "3 miles",
+            "elevation" : "610 feet",
+            "description" : "A medium difficulty hike to the most well-known arch within Arches National Park."
+        },
+        {
+            "hikeName" : "Windows Loop and Turret Arch Trail",
+            "details" : "->",
+            "location" : "Arches National Park, Moab, UT",
+            "difficulty" : "Easy",
+            "length" : "1.2 miles",
+            "elevation" : "154 feet",
+            "description" : "An easy hike good for all skill levels. The Turret Arch is in the Windows area of Arches National Park."
+        },
+        {
+            "hikeName" : "Landscape Arch Trail",
+            "details" : "->",
+            "location" : "Arches National Park, Moab, UT",
+            "difficulty" : "Easy",
+            "length" : "1.9 miles",
+            "elevation" : "259 feet",
+            "description" : "An easy hike to the Landscape Arch within Arches National Park."
+        }
+    ]
+}

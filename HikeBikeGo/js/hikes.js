@@ -1,10 +1,10 @@
-const requestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/hikes.json';
+const requestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/archeshikes.json';
 fetch(requestURL) 
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
-        const hikes = jsonObject['hikes'];
+        const archeshikes = jsonObject['archeshikes'];
         //console.table(jsonObject); //temporary testing
         for (let i = 0; i < hikes.length; i++) { 
             let hike = document.createElement('div');
@@ -31,13 +31,13 @@ fetch(requestURL)
             let elevation = document.createElement('p');
             let description = document.createElement('p');
             h3.textContent = hikes[i].hikeName;
-            h4.textContent = 'Show Details ' + hikes[i].details;
-            h5.textContent = 'Location: ' + hikes[i].location;
+            h4.textContent = 'Show Details ' + archeshikes[i].details;
+            h5.textContent = 'Location: ' + archeshikes[i].location;
             //location.textContent = 'Location: ' + hikes[i].location;
-            difficulty.textContent = 'Difficulty: ' + hikes[i].difficulty;
-            length.textContent = 'Length: ' + hikes[i].length;
-            elevation.textContent = 'Elevation: ' + hikes[i].elevation;
-            description.textContent = 'Description: ' + hikes[i].description;
+            difficulty.textContent = 'Difficulty: ' + archeshikes[i].difficulty;
+            length.textContent = 'Length: ' + archeshikes[i].length;
+            elevation.textContent = 'Elevation: ' + archeshikes[i].elevation;
+            description.textContent = 'Description: ' + archeshikes[i].description;
             hike.appendChild(h3);
             hike.appendChild(h4);
             hike.appendChild(details);
@@ -49,7 +49,7 @@ fetch(requestURL)
             hike1.appendChild(elevation);
             hike1.appendChild(description);
             hike.appendChild(hike1);
-            document.querySelector('div.hikeDisplay').appendChild(hike);
+            document.querySelector('div.AhikeDisplay').appendChild(hike);
         }
     });
 

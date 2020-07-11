@@ -57,17 +57,17 @@ a:hover {
   color: #65A7CA;
 }
 
-.hikeDisplay h3 {
+.AhikeDisplay h3 {
   color: #FFF3D6;
   background-color: #E06D06;
 }
 
-.hikeDisplay h4 {
+.AhikeDisplay h4 {
   color: #313E50;
   background-color: #FFC53A;
 }
 
-.hikeDisplay p {
+.AhikeDisplay p {
   color: #4C3220;
   background-color: #FFF3D6;
 }
@@ -125,15 +125,15 @@ footer {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.hikeDisplay h3 {
+.AhikeDisplay h3 {
   font-family: "Trade Winds", cursive;
 }
 
-.hikeDisplay h4 {
+.AhikeDisplay h4 {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.hikeDisplay p {
+.AhikeDisplay p {
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -230,17 +230,17 @@ footer {
   margin: 5px;
 }
 
-.hikeDisplay h3 {
+.AhikeDisplay h3 {
   padding: 15px;
   margin-bottom: 0;
 }
 
-.hikeDisplay h4 {
+.AhikeDisplay h4 {
   padding: 5px;
   margin: 0;
 }
 
-.hikeDisplay p {
+.AhikeDisplay p {
   padding: 10px;
   margin: 0;
 }
