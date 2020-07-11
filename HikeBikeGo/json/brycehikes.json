@@ -2,7 +2,7 @@
     "brycehikes" : [
         {
             "hikeName" : "Fairyland Loop Trail",
-            "details" : "->",
+            "details" : " ",
             "location" : "Bryce Canyon National Park, Bryce, UT",
             "difficulty" : "Medium",
             "length" : "7.8 miles",
@@ -11,7 +11,7 @@
         },
         {
             "hikeName" : "Mossy Cave Turret Arch and Little Windows Trail",
-            "details" : "->",
+            "details" : " ",
             "location" : "Bryce Canyon National Park, Bryce, UT",
             "difficulty" : "Easy",
             "length" : "1 mile",
@@ -20,7 +20,7 @@
         },
         {
             "hikeName" : "Navajo Loop and Queen's Garden Trail",
-            "details" : "->",
+            "details" : " ",
             "location" : "Bryce Canyon National Park, Bryce, UT",
             "difficulty" : "Medium",
             "length" : "2.9 miles",
@@ -29,7 +29,7 @@
         },
         {
             "hikeName" : "Bristlecone Loop Trail",
-            "details" : "->",
+            "details" : " ",
             "location" : "Bryce Canyon National Park, Bryce, UT",
             "difficulty" : "Easy",
             "length" : "1 mile",
@@ -38,7 +38,7 @@
         },
         {
             "hikeName" : "East Fork of the Sevier River Scenic Backway",
-            "details" : "->",
+            "details" : " ",
             "location" : "Bryce Canyon National Park, Bryce, UT",
             "difficulty" : "Medium",
             "length" : "34.7 miles",

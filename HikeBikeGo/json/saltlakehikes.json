@@ -1,31 +1,49 @@
 {
     "saltlakehikes" : [
         {
-            "hikeName" : "Delicate Arch Trail",
-            "details" : "->",
-            "location" : "Arches National Park, Moab, UT",
+            "hikeName" : "Livingroom Lookout Trail",
+            "details" : " ",
+            "location" : "Salt Lake City, Salt Lake County, UT",
             "difficulty" : "Medium",
-            "length" : "3 miles",
-            "elevation" : "610 feet",
-            "description" : "A medium difficulty hike to the most well-known arch within Arches National Park."
+            "length" : "2.3 miles",
+            "elevation" : "980 feet",
+            "description" : "A medium difficulty hike with many rocks and great views of the Salt Lake Valley."
         },
         {
-            "hikeName" : "Windows Loop and Turret Arch Trail",
-            "details" : "->",
-            "location" : "Arches National Park, Moab, UT",
+            "hikeName" : "Wild Rose Trail",
+            "details" : " ",
+            "location" : "North Salt Lake, Salt Lake County, UT",
             "difficulty" : "Easy",
-            "length" : "1.2 miles",
-            "elevation" : "154 feet",
-            "description" : "An easy hike good for all skill levels. The Turret Arch is in the Windows area of Arches National Park."
+            "length" : "2 miles",
+            "elevation" : "344 feet",
+            "description" : "This easy hike offers views of Salt Lake City and the City Creek area."
         },
         {
-            "hikeName" : "Landscape Arch Trail",
-            "details" : "->",
-            "location" : "Arches National Park, Moab, UT",
+            "hikeName" : "Rocky Mouth Falls Trail",
+            "details" : " ",
+            "location" : "Sandy, Salt Lake County, UT",
             "difficulty" : "Easy",
-            "length" : "1.9 miles",
-            "elevation" : "259 feet",
-            "description" : "An easy hike to the Landscape Arch within Arches National Park."
+            "length" : ".7 miles",
+            "elevation" : "282 feet",
+            "description" : "This hike is easy but is steep with many stairs to the small creek and waterfall at the top."
+        },
+        {
+            "hikeName" : "Bear Canyon Bridge via Bonneville Shoreline Trail",
+            "details" : " ",
+            "location" : "Draper, Salt Lake County, UT",
+            "difficulty" : "Medium",
+            "length" : "3.3 miles",
+            "elevation" : "500 feet",
+            "description" : "This medium difficulty hike includes a bridge and access to the Bonneville Shoreline Trail and Bear Canyon Loop."
+        },
+        {
+            "hikeName" : "Heughs Canyon Trail",
+            "details" : " ",
+            "location" : "Sandy, Salt Lake County, UT",
+            "difficulty" : "Medium",
+            "length" : "3.5 miles",
+            "elevation" : "1,940 feet",
+            "description" : "This medium difficulty hike features a waterfall and scenic views."
         }
     ]
 }

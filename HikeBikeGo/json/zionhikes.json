@@ -1,31 +1,49 @@
 {
     "zionhikes" : [
         {
-            "hikeName" : "Delicate Arch Trail",
-            "details" : "->",
-            "location" : "Arches National Park, Moab, UT",
+            "hikeName" : "Zion Narrows Riverside Walk",
+            "details" : " ",
+            "location" : "Zion National Park, Springdale, UT",
+            "difficulty" : "Easy",
+            "length" : "2 miles",
+            "elevation" : "193 feet",
+            "description" : "This easy hike includes a beautiful waterfall in Zion National Park."
+        },
+        {
+            "hikeName" : "Northgate Peaks via Kolob Terrace",
+            "details" : " ",
+            "location" : "Zion National Park, Springdale, UT",
+            "difficulty" : "Medium",
+            "length" : "6 miles",
+            "elevation" : "1,118 feet",
+            "description" : "This hike includes access to the Virgin River for swimming."
+        },
+        {
+            "hikeName" : "Wildcat Canyon Trail",
+            "details" : " ",
+            "location" : "Zion National Park, Springdale, UT",
+            "difficulty" : "Hard",
+            "length" : "7.8 miles",
+            "elevation" : "625 feet",
+            "description" : "This hike includes access to the Subway Trail and allows rock climbing."
+        },
+        {
+            "hikeName" : "The Watchman Trail",
+            "details" : " ",
+            "location" : "Zion National Park, Springdale, UT",
             "difficulty" : "Medium",
             "length" : "3 miles",
-            "elevation" : "610 feet",
-            "description" : "A medium difficulty hike to the most well-known arch within Arches National Park."
+            "elevation" : "640 feet",
+            "description" : "This hike allows access to Angels Landing and the Narrows in Zion National Park."
         },
         {
-            "hikeName" : "Windows Loop and Turret Arch Trail",
-            "details" : "->",
-            "location" : "Arches National Park, Moab, UT",
+            "hikeName" : "Zion Grotto Trail",
+            "details" : " ",
+            "location" : "Zion National Park, Springdale, UT",
             "difficulty" : "Easy",
             "length" : "1.2 miles",
-            "elevation" : "154 feet",
-            "description" : "An easy hike good for all skill levels. The Turret Arch is in the Windows area of Arches National Park."
-        },
-        {
-            "hikeName" : "Landscape Arch Trail",
-            "details" : "->",
-            "location" : "Arches National Park, Moab, UT",
-            "difficulty" : "Easy",
-            "length" : "1.9 miles",
-            "elevation" : "259 feet",
-            "description" : "An easy hike to the Landscape Arch within Arches National Park."
+            "elevation" : "80 feet",
+            "description" : "This easy hike leads you to the Emerald Trails in Zion National Park."
         }
     ]
 }
