@@ -9,6 +9,9 @@ $color7: #4C3220; //brown
 $color8: #E7D7C1; //tan
 $color9: #FFF3D6; //off-white
 
+body {
+    background-color: $color5;
+}
 h1 {
     background-color: $color5;
     color: $color9;
@@ -30,7 +33,7 @@ p {
 }
 
 footer {
-  background-color: $color5;
+  background-color: $color4;
   color: $color8;
 }
 
