@@ -23,6 +23,10 @@ fetch(ArequestURL)
             let details = document.createElement('p');
             let hike1 = document.createElement('div');
             hike1.className = 'hidden';
+            hike1.setAttribute('id', 'hikeDetails');
+            hike1.addEventListener('click', (e) => {
+                console.log(e.target.id);
+            });
             let h5 = document.createElement('h5'); // Hike location aka Moab etc
             let hikeName = document.createElement('p');
             let location = document.createElement('p');

@@ -261,6 +261,10 @@ footer {
   content: "      →";
 }
 
+.showDetails {
+  display: block;
+}
+
 /*
 
 .herosection = mainsection
