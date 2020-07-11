@@ -45,9 +45,9 @@ fetch(BryceapiURL)
     document.getElementById('Bspeed')
     .textContent = jsObject.wind.speed;
 
-    runWindChill();
+    runWindChillB();
   });
-  function runWindChill(){
+  function runWindChillB(){
     var temp = parseFloat(document.getElementById('Btemp').textContent);
     var speed = parseFloat(document.getElementById('Bspeed').textContent);
   if (temp <= 50 && speed >= 3) {
@@ -75,9 +75,9 @@ fetch(CanyonapiURL)
     document.getElementById('Canspeed')
     .textContent = jsObject.wind.speed;
 
-    runWindChill();
+    runWindChillCan();
   });
-  function runWindChill(){
+  function runWindChillCan(){
     var temp = parseFloat(document.getElementById('Cantemp').textContent);
     var speed = parseFloat(document.getElementById('Canspeed').textContent);
   if (temp <= 50 && speed >= 3) {
@@ -105,9 +105,9 @@ fetch(CapitolapiURL)
     document.getElementById('Capspeed')
     .textContent = jsObject.wind.speed;
 
-    runWindChill();
+    runWindChillCap();
   });
-  function runWindChill(){
+  function runWindChillCap(){
     var temp = parseFloat(document.getElementById('Captemp').textContent);
     var speed = parseFloat(document.getElementById('Capspeed').textContent);
   if (temp <= 50 && speed >= 3) {
@@ -135,9 +135,9 @@ fetch(ZapiURL)
     document.getElementById('Zspeed')
     .textContent = jsObject.wind.speed;
 
-    runWindChill();
+    runWindChillZ();
   });
-  function runWindChill(){
+  function runWindChillZ(){
     var temp = parseFloat(document.getElementById('Ztemp').textContent);
     var speed = parseFloat(document.getElementById('Zspeed').textContent);
   if (temp <= 50 && speed >= 3) {
@@ -166,9 +166,9 @@ fetch(SapiURL)
     document.getElementById('Sspeed')
     .textContent = jsObject.wind.speed;
 
-    runWindChill();
+    runWindChillS();
   });
-  function runWindChill(){
+  function runWindChillS(){
     var temp = parseFloat(document.getElementById('Stemp').textContent);
     var speed = parseFloat(document.getElementById('Sspeed').textContent);
   if (temp <= 50 && speed >= 3) {
@@ -196,9 +196,9 @@ fetch(PapiURL)
     document.getElementById('Pspeed')
     .textContent = jsObject.wind.speed;
 
-    runWindChill();
+    runWindChillP();
   });
-  function runWindChill(){
+  function runWindChillP(){
     var temp = parseFloat(document.getElementById('Ptemp').textContent);
     var speed = parseFloat(document.getElementById('Pspeed').textContent);
   if (temp <= 50 && speed >= 3) {
@@ -226,9 +226,9 @@ fetch(FapiURL)
     document.getElementById('Fspeed')
     .textContent = jsObject.wind.speed;
 
-    runWindChill();
+    runWindChillF();
   });
-  function runWindChill(){
+  function runWindChillF(){
     var temp = parseFloat(document.getElementById('Ftemp').textContent);
     var speed = parseFloat(document.getElementById('Fspeed').textContent);
   if (temp <= 50 && speed >= 3) {
