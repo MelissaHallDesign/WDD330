@@ -1,5 +1,5 @@
-const requestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/archeshikes.json';
-fetch(requestURL) 
+const ArequestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/archeshikes.json';
+fetch(ArequestURL) 
     .then(function (response) {
         return response.json();
     })
