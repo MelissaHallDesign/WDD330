@@ -30,7 +30,7 @@ fetch(requestURL)
             let length = document.createElement('p');
             let elevation = document.createElement('p');
             let description = document.createElement('p');
-            h3.textContent = hikes[i].hikeName;
+            h3.textContent = archeshikes[i].hikeName;
             h4.textContent = 'Show Details ' + archeshikes[i].details;
             h5.textContent = 'Location: ' + archeshikes[i].location;
             //location.textContent = 'Location: ' + hikes[i].location;
