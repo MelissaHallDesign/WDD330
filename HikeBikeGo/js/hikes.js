@@ -9,14 +9,14 @@ fetch(ArequestURL)
         for (let i = 0; i < archeshikes.length; i++) { 
             let hike = document.createElement('div');
             let h3 = document.createElement('h3'); //Hike Names
-            //h3.setAttribute('id', hikes[i].hikeName);
-            h3.setAttribute('id', 'favorite'); //id of 'favorite' set to h3 hike names
+            h3.setAttribute('id', archeshikes[i].hikeName);
+            //h3.setAttribute('id', 'favorite'); //id of 'favorite' set to h3 hike names
             h3.addEventListener('click', (e) => {
                 console.log(e.target.id);
             });
             let h4 = document.createElement('h4'); //'Show Details'
-            //h4.setAttribute('id', hikes[i].details);
-            h4.setAttribute('id', 'showDetails'); //id of 'showDetails' set to h4 show details
+            h4.setAttribute('id', archeshikes[i].details);
+            //h4.setAttribute('id', 'showDetails'); //id of 'showDetails' set to h4 show details
             h4.addEventListener('click', (e) => {
                 console.log(e.target.id);
             });
@@ -31,7 +31,8 @@ fetch(ArequestURL)
             let elevation = document.createElement('p');
             let description = document.createElement('p');
             h3.textContent = archeshikes[i].hikeName;
-            h4.textContent = 'Show Details ' + archeshikes[i].details;
+            //h4.textContent = 'Show Details ' + archeshikes[i].details;
+            h4.textContent = archeshikes[i].details;
             h5.textContent = 'Location: ' + archeshikes[i].location;
             //location.textContent = 'Location: ' + hikes[i].location;
             difficulty.textContent = 'Difficulty: ' + archeshikes[i].difficulty;

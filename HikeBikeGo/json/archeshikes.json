@@ -2,7 +2,7 @@
     "archeshikes" : [
         {
             "hikeName" : "Delicate Arch Trail",
-            "details" : " ",
+            "details" : "Details",
             "location" : "Arches National Park, Moab, UT",
             "difficulty" : "Medium",
             "length" : "3 miles",
@@ -11,7 +11,7 @@
         },
         {
             "hikeName" : "Windows Loop and Turret Arch Trail",
-            "details" : " ",
+            "details" : "Details",
             "location" : "Arches National Park, Moab, UT",
             "difficulty" : "Easy",
             "length" : "1.2 miles",
@@ -20,7 +20,7 @@
         },
         {
             "hikeName" : "Landscape Arch Trail",
-            "details" : " ",
+            "details" : "Details",
             "location" : "Arches National Park, Moab, UT",
             "difficulty" : "Easy",
             "length" : "1.9 miles",
@@ -29,7 +29,7 @@
         },
         {
             "hikeName" : "Fiery Furnace and Surprise Arch",
-            "details" : " ",
+            "details" : "Details",
             "location" : "Arches National Park, Moab, UT",
             "difficulty" : "Medium",
             "length" : "1.7 miles",
@@ -38,7 +38,7 @@
         },
         {
             "hikeName" : "Ribbon Arch Trail",
-            "details" : " ",
+            "details" : "Details",
             "location" : "Arches National Park, Moab, UT",
             "difficulty" : "Medium",
             "length" : "2 miles",

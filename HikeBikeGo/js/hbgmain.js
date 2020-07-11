@@ -3,6 +3,11 @@ function toggleMenu() {
 }
 document.querySelector('#menu').addEventListener('click', toggleMenu);
 
+// function toggleDetails() {
+//     document.querySelector('#navigation').classList.toggle('open');
+// }
+// document.querySelector('#menu').addEventListener('click', toggleDetails);
+
 // //Favorite Hike Using localStorage
 // //Use empty array to get favorites
 // const fave = JSON.parse(localStorage.getItem('fave'));

@@ -258,9 +258,6 @@ footer {
 }
 
 #showDetails:after {
-  display: block;
-}
-#showDetails:after :after {
   content: "      →";
 }
 
