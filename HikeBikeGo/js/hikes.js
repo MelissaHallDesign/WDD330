@@ -6,7 +6,7 @@ fetch(requestURL)
     .then(function (jsonObject) {
         const archeshikes = jsonObject['archeshikes'];
         //console.table(jsonObject); //temporary testing
-        for (let i = 0; i < hikes.length; i++) { 
+        for (let i = 0; i < archeshikes.length; i++) { 
             let hike = document.createElement('div');
             let h3 = document.createElement('h3'); //Hike Names
             //h3.setAttribute('id', hikes[i].hikeName);
