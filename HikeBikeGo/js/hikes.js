@@ -20,20 +20,19 @@ fetch(ArequestURL)
             // h4.addEventListener('click', (e) => {
             //     console.log(e.target.id);
             // });
-            
+            let h4 = document.createElement('h4'); //'Show Details'
+            h4.setAttribute('id', 'showTheDetails');
             let hike1 = document.createElement('div');
-           
-            //changed hike1 to details on line 27 and 28
             hike1.setAttribute('id', 'hikeDetails');
             hike1.addEventListener('click', (e) => {
                 console.log(e.target.id);
             });
-            let h4 = document.createElement('h4'); //'Show Details'
-            h4.setAttribute('id', 'Details');
+            // let h4 = document.createElement('h4'); //'Show Details'
+            // h4.setAttribute('id', 'Details');
             //h4.setAttribute('id', archeshikes[i].details);
-            h4.addEventListener('click', (e) => {
-                console.log(e.target.id);
-            });
+            // h4.addEventListener('click', (e) => {
+            //     console.log(e.target.id);
+            // });
             let details = document.createElement('p');
             //hike1.className = 'hidden';
             //hike1.className = 'show';
@@ -64,7 +63,7 @@ fetch(ArequestURL)
             hike1.appendChild(elevation);
             hike1.appendChild(description);
             hike.appendChild(hike1);
-            document.querySelector('div.AhikeDisplay').appendChild(hike);
+            document.querySelector('section.AhikeDisplay').appendChild(hike);
         }
     });
 
