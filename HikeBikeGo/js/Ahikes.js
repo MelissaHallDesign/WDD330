@@ -8,29 +8,20 @@ fetch(ArequestURL)
         //console.table(jsonObject); //temporary testing
         for (let i = 0; i < archeshikes.length; i++) { 
             let hike = document.createElement('div');
+            //let hikeDiv = document.createElement('div');
+            //hikeDiv.setAttribute('id', 'hikeDiv');
             let h3 = document.createElement('h3'); //Hike Names
             h3.setAttribute('id', archeshikes[i].hikeName);
-            //h3.setAttribute('id', 'favorite'); //id of 'favorite' set to h3 hike names
             h3.addEventListener('click', (e) => {
                 console.log(e.target.id);
             });
-            //let h4 = document.createElement('h4'); //'Show Details'
-            //h4.setAttribute('id', archeshikes[i].details);
-            //h4.setAttribute('id', 'showDetails'); //id of 'showDetails' set to h4 show details
-            // h4.addEventListener('click', (e) => {
-            //     console.log(e.target.id);
-            // });
-            
             let hike1 = document.createElement('div');
-           
-            //changed hike1 to details on line 27 and 28
             hike1.setAttribute('id', 'hikeDetails');
             hike1.addEventListener('click', (e) => {
                 console.log(e.target.id);
             });
             let h4 = document.createElement('h4'); //'Show Details'
-            h4.setAttribute('id', 'Details');
-            //h4.setAttribute('id', archeshikes[i].details);
+            h4.setAttribute('id', archeshikes[i].details);
             h4.addEventListener('click', (e) => {
                 console.log(e.target.id);
             });
@@ -48,7 +39,7 @@ fetch(ArequestURL)
             //h4.textContent = 'Show Details ' + archeshikes[i].details;
             h4.textContent = archeshikes[i].details;
             h5.textContent = 'Location: ' + archeshikes[i].location;
-            //location.textContent = 'Location: ' + hikes[i].location;
+            location.textContent = 'Location: ' + hikes[i].location;
             difficulty.textContent = 'Difficulty: ' + archeshikes[i].difficulty;
             length.textContent = 'Length: ' + archeshikes[i].length;
             elevation.textContent = 'Elevation: ' + archeshikes[i].elevation;
@@ -67,10 +58,4 @@ fetch(ArequestURL)
             document.querySelector('div.AhikeDisplay').appendChild(hike);
         }
     });
-
-    // function toggleMenu() {
-    //     document.querySelector('#showHike').classList.toggle('openDetails');
-    //   }
-    //   document.querySelector('#details').addEventListener('click', toggleMenu);
-
     

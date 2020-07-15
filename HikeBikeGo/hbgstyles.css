@@ -249,8 +249,12 @@ footer {
   margin: 0;
 }
 
-div.hidden {
+#hikeDetails {
   display: none;
+}
+
+.show p {
+  display: block;
 }
 
 #favorite:after {
