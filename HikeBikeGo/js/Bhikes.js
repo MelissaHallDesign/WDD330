@@ -1,12 +1,13 @@
-const ArequestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/archeshikes.json';
-fetch(ArequestURL) 
+const BrequestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/brycehikes.json';
+fetch(BrequestURL) 
 .then(function (response) {
     return response.json();
 })
 .then(function (jsonObject) {
     //console.table(jsonObject); //temporary testing
-    const archeshikes = jsonObject['archeshikes'];
-    for (let i = 0; i < archeshikes.length; i++) {
+    const brycehikes = jsonObject['brycehikes'];
+    //const idahoTowns = ["Fish Haven", "Soda Springs", "Preston"];
+    for (let i = 0; i < brycehikes.length; i++) {
         //create variable elements
         let hike = document.createElement('section');
         let span = document.createElement('span');
@@ -21,23 +22,25 @@ fetch(ArequestURL)
         let description = document.createElement('p');
         //let image = document.createElement('img');
         //modify the contents
-        hike.setAttribute('id', archeshikes[i].hikeName);
+        //hike.className = 'towncard';
+        hike.setAttribute('id', brycehikes[i].hikeName);
         hike.addEventListener('click', (e) => {
             console.log(e.target.id);
         });
-        h3.textContent = archeshikes[i].hikeName;
+        //location.className = 'motto';
+        h3.textContent = brycehikes[i].hikeName;
         div.setAttribute('id', 'showDetails');
-        details.textContent = archeshikes[i].details;
+        details.textContent = brycehikes[i].details;
         details.setAttribute('id', 'detailClick');
         //details.className = 'Details';
         // button.setAttribute('onclick', 'buttonFunction()');
         // button.setAttribute('id', 'detailButton');
         // button.textContent = 'Details';
-        location.textContent = archeshikes[i].location;
-        difficulty.textContent =  'Difficulty: ' + archeshikes[i].difficulty;
-        length.textContent =  'Length: ' + archeshikes[i].length;
-        elevation.textContent =  'Elevation: ' + archeshikes[i].elevation;
-        description.textContent = archeshikes[i].description;
+        location.textContent = brycehikes[i].location;
+        difficulty.textContent =  'Difficulty: ' + brycehikes[i].difficulty;
+        length.textContent =  'Length: ' + brycehikes[i].length;
+        elevation.textContent =  'Elevation: ' + brycehikes[i].elevation;
+        description.textContent = brycehikes[i].description;
         //image.setAttribute('src', 'images/' + archeshikes[i].photo);
         //image.setAttribute('alt', archeshikes[i].name);
         //Merge them together
@@ -55,7 +58,7 @@ fetch(ArequestURL)
         
         //hike.appendChild(image);
         //Attaching to the page
-        document.querySelector('div.AhikeDisplay').appendChild(hike);
+        document.querySelector('div.BhikeDisplay').appendChild(hike);
     
     }
 });

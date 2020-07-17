@@ -94,6 +94,7 @@ footer {
 //End of Weather Data Styles
 
 //Hike Styles
+//Arches
 .AhikeDisplay h3 {
     padding: 15px;
     margin-bottom: 0;
@@ -107,6 +108,20 @@ footer {
     padding: 10px;
     margin: 0;
 }
+//Bryce
+.BhikeDisplay h3 {
+    padding: 15px;
+    margin-bottom: 0;
+}
+.BhikeDisplay h4 {
+    padding: 5px;
+    margin: 0;
+}
+
+.BhikeDisplay p {
+    padding: 10px;
+    margin: 0;
+}
 #hikeDetails {
     display: none;
 }
@@ -114,16 +129,16 @@ footer {
 //     display: none;
 // }
 
-.show{
+.show p {
     display: block;
 }
 #favorites:after {
     content: '      \2661';
 }
-#showDetails:after {
+p#detailClick:after {
     content: '      \2192';
 }
-.showDetails {
+div#showDetails {
     display: block;
 }
 

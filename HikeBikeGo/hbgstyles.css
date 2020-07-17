@@ -249,11 +249,26 @@ footer {
   margin: 0;
 }
 
+.BhikeDisplay h3 {
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.BhikeDisplay h4 {
+  padding: 5px;
+  margin: 0;
+}
+
+.BhikeDisplay p {
+  padding: 10px;
+  margin: 0;
+}
+
 #hikeDetails {
   display: none;
 }
 
-.show {
+.show p {
   display: block;
 }
 
@@ -261,11 +276,11 @@ footer {
   content: "      ♡";
 }
 
-#showDetails:after {
+p#detailClick:after {
   content: "      →";
 }
 
-.showDetails {
+div#showDetails {
   display: block;
 }
 
