@@ -210,10 +210,20 @@ footer {
 
 
 
-
-
-
-
+// h3:after {
+//         content: '      \2661';
+       
+//     }
+    h3.heart:after {
+        content: ' \2661';
+    }
+      h3.heart:hover:after,
+      h3.heart.fav:after {
+        content: ' \2661';
+      }
+      h3.heart.fav:hover:after {
+        content: ' \2665';
+      }
 
 
 

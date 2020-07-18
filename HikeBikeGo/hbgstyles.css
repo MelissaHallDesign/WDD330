@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Lato&family=Rammetto+One&family=Source+Sans+Pro&family=Trade+Winds&display=swap");
 body {
   background-color: #65A7CA;
@@ -178,6 +179,19 @@ a:hover {
 .UhikeDisplay p {
   color: #4C3220;
   background-color: #FFF3D6;
+}
+
+h3.heart:after {
+  color: #FFF3D6;
+}
+
+h3.heart:hover:after,
+h3.heart.fav:after {
+  color: #FFC53A;
+}
+
+h3.heart.fav:hover:after {
+  color: #A31621;
 }
 
 nav ul {
@@ -523,6 +537,19 @@ footer {
 .UhikeDisplay p {
   padding: 10px;
   margin: 0;
+}
+
+h3.heart:after {
+  content: " ♡";
+}
+
+h3.heart:hover:after,
+h3.heart.fav:after {
+  content: " ♡";
+}
+
+h3.heart.fav:hover:after {
+  content: " ♥";
 }
 
 /*# sourceMappingURL=hbgstyles.css.map */
