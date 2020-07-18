@@ -1,11 +1,11 @@
-const BrequestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/brycehikes.json';
-fetch(BrequestURL) 
+const UrequestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/utahhikes.json';
+fetch(UrequestURL) 
 .then(function (response) {
     return response.json();
 })
 .then(function (jsonObject) {
-    const brycehikes = jsonObject['brycehikes'];
-    for (let i = 0; i < brycehikes.length; i++) {
+    const utahhikes = jsonObject['utahhikes'];
+    for (let i = 0; i < utahhikes.length; i++) {
         //create variable elements
         let hike = document.createElement('section');
         let span = document.createElement('span');
@@ -18,21 +18,20 @@ fetch(BrequestURL)
         let elevation = document.createElement('p');
         let description = document.createElement('p');
         //modify the contents
-        //hike.className = 'towncard';
-        hike.setAttribute('id', brycehikes[i].hikeName);
+        hike.setAttribute('id', utahhikes[i].hikeName);
         hike.addEventListener('click', (e) => {
             console.log(e.target.id);
         });
-        h3.textContent = brycehikes[i].hikeName;
+        h3.textContent = utahhikes[i].hikeName;
         //div.setAttribute('id', 'showDetails');
-        //details.textContent = brycehikes[i].details;
+        //details.textContent = archeshikes[i].details;
         //details.setAttribute('id', 'detailClick');
-        //details.className = 'Details';
-        location.textContent = brycehikes[i].location;
-        difficulty.textContent =  'Difficulty: ' + brycehikes[i].difficulty;
-        length.textContent =  'Length: ' + brycehikes[i].length;
-        elevation.textContent =  'Elevation: ' + brycehikes[i].elevation;
-        description.textContent = brycehikes[i].description;
+        location.textContent = utahhikes[i].location;
+        difficulty.textContent =  'Difficulty: ' + utahhikes[i].difficulty;
+        length.textContent =  'Length: ' + utahhikes[i].length;
+        elevation.textContent =  'Elevation: ' + utahhikes[i].elevation;
+        description.textContent = utahhikes[i].description;
+        
         //Merge them together
         hike.appendChild(span);
         span.appendChild(h3);
@@ -45,7 +44,7 @@ fetch(BrequestURL)
         div.appendChild(description);
         
         //Attaching to the page
-        document.querySelector('div.BhikeDisplay').appendChild(hike);
+        document.querySelector('div.UhikeDisplay').appendChild(hike);
     
     }
 });

@@ -122,73 +122,120 @@ footer {
     padding: 10px;
     margin: 0;
 }
-#hikeDetails {
-    display: none;
+//Canyonlands
+.CanhikeDisplay h3 {
+    padding: 15px;
+    margin-bottom: 0;
 }
+.CanhikeDisplay h4 {
+    padding: 5px;
+    margin: 0;
+}
+
+.CanhikeDisplay p {
+    padding: 10px;
+    margin: 0;
+}
+//Capitol Reef
+.CaphikeDisplay h3 {
+    padding: 15px;
+    margin-bottom: 0;
+}
+.CaphikeDisplay h4 {
+    padding: 5px;
+    margin: 0;
+}
+
+.CaphikeDisplay p {
+    padding: 10px;
+    margin: 0;
+}
+//Zion
+.ZhikeDisplay h3 {
+    padding: 15px;
+    margin-bottom: 0;
+}
+.ZhikeDisplay h4 {
+    padding: 5px;
+    margin: 0;
+}
+
+.ZhikeDisplay p {
+    padding: 10px;
+    margin: 0;
+}
+//Davis
+.DhikeDisplay h3 {
+    padding: 15px;
+    margin-bottom: 0;
+}
+.DhikeDisplay h4 {
+    padding: 5px;
+    margin: 0;
+}
+
+.DhikeDisplay p {
+    padding: 10px;
+    margin: 0;
+}
+//SLC
+.ShikeDisplay h3 {
+    padding: 15px;
+    margin-bottom: 0;
+}
+.ShikeDisplay h4 {
+    padding: 5px;
+    margin: 0;
+}
+
+.ShikeDisplay p {
+    padding: 10px;
+    margin: 0;
+}
+//Utah
+.UhikeDisplay h3 {
+    padding: 15px;
+    margin-bottom: 0;
+}
+.UhikeDisplay h4 {
+    padding: 5px;
+    margin: 0;
+}
+
+.UhikeDisplay p {
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+// #hikeDetails {
+//     display: none;
+// }
 // .hidden {
 //     display: none;
 // }
 
-.show p {
-    display: block;
-}
-#favorites:after {
-    content: '      \2661';
-}
-p#detailClick:after {
-    content: '      \2192';
-}
-div#showDetails {
-    display: block;
-}
-
-
-
-
-
-/*
-
-.herosection = mainsection
-.weathersummary = weathersection
-.weathersummary1 = weatherlabel
-.weathersummary2 = weatherdata
-.weathersummaryheading = weatherheading
-.herosection {
-    position: relative;
-
-    .weathersummary {
-    background-color: hsl(350, 74%, 26%, .75);
-    padding: 5px;
-    max-width: 60%;
-    top: 25px;
-    left: 25px;
-    position: absolute;
-    box-shadow: inset 0 0 5px #e59500;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.weathersummary span:nth-child(even){
-    padding-left: 5px;
-}
-.weathersummary1 {
-    color: #fafaff;
-    font-size: 15px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
-}
-.weathersummary2 {
-    color: #e59500;
-    font-size: 15px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-}
-.weathersummaryheading {
-    color: #fafaff;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    grid-column-end: 2 span;
-}
-*/
+// .show p {
+//     display: block;
+// }
+// .completed:after {
+//     content: '      \2661';
+    //font-size: 30px;
+//}
+// #favorite.AhikeDisplay:after {
+//     content: '      \2661';
+// }
+// p#detailClick:after {
+//     content: '      \2192';
+// }
+// div#showDetails {
+//     display: block;
+// }

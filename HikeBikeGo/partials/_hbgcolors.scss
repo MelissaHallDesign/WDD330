@@ -70,6 +70,8 @@ a:hover {
 .weatherdata {
     color: $color5;
 }
+
+//Arches
 .AhikeDisplay h3 {
     color: $color9;
     background-color: $color2;
@@ -83,9 +85,108 @@ a:hover {
     background-color: $color9;
 }
 
-#favorite:after {
-    color: $color1;
+//Bryce
+.BhikeDisplay h3 {
+    color: $color9;
+    background-color: $color2;
 }
-#showDetails:after {
+.BhikeDisplay h4 {
     color: $color6;
+    background-color: $color3;
 }
+.BhikeDisplay p {
+    color: $color7;
+    background-color: $color9;
+}
+//Canyonlands
+.CanhikeDisplay h3 {
+    color: $color9;
+    background-color: $color2;
+}
+.CanhikeDisplay h4 {
+    color: $color6;
+    background-color: $color3;
+}
+.CanhikeDisplay p {
+    color: $color7;
+    background-color: $color9;
+}
+//Capitol Reef
+.CaphikeDisplay h3 {
+    color: $color9;
+    background-color: $color2;
+}
+.CaphikeDisplay h4 {
+    color: $color6;
+    background-color: $color3;
+}
+.CaphikeDisplay p {
+    color: $color7;
+    background-color: $color9;
+}
+//Zion
+.ZhikeDisplay h3 {
+    color: $color9;
+    background-color: $color2;
+}
+.ZhikeDisplay h4 {
+    color: $color6;
+    background-color: $color3;
+}
+.ZhikeDisplay p {
+    color: $color7;
+    background-color: $color9;
+}
+//Davis
+.DhikeDisplay h3 {
+    color: $color9;
+    background-color: $color2;
+}
+.DhikeDisplay h4 {
+    color: $color6;
+    background-color: $color3;
+}
+.DhikeDisplay p {
+    color: $color7;
+    background-color: $color9;
+}
+//SLC
+.ShikeDisplay h3 {
+    color: $color9;
+    background-color: $color2;
+}
+.ShikeDisplay h4 {
+    color: $color6;
+    background-color: $color3;
+}
+.ShikeDisplay p {
+    color: $color7;
+    background-color: $color9;
+}
+//Utah
+.UhikeDisplay h3 {
+    color: $color9;
+    background-color: $color2;
+}
+.UhikeDisplay h4 {
+    color: $color6;
+    background-color: $color3;
+}
+.UhikeDisplay p {
+    color: $color7;
+    background-color: $color9;
+}
+
+
+
+
+
+// .completed {
+//     color: $color1;
+// }
+// #favorite.AhikeDisplay:after {
+//     color: $color1;
+// }
+// #showDetails:after {
+//     color: $color6;
+// }

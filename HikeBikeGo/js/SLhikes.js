@@ -1,11 +1,11 @@
-const BrequestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/brycehikes.json';
-fetch(BrequestURL) 
+const SLrequestURL = 'https://melissahalldesign.github.io/WDD330/HikeBikeGo/json/saltlakehikes.json';
+fetch(SLrequestURL) 
 .then(function (response) {
     return response.json();
 })
 .then(function (jsonObject) {
-    const brycehikes = jsonObject['brycehikes'];
-    for (let i = 0; i < brycehikes.length; i++) {
+    const saltlakehikes = jsonObject['saltlakehikes'];
+    for (let i = 0; i < saltlakehikes.length; i++) {
         //create variable elements
         let hike = document.createElement('section');
         let span = document.createElement('span');
@@ -18,21 +18,20 @@ fetch(BrequestURL)
         let elevation = document.createElement('p');
         let description = document.createElement('p');
         //modify the contents
-        //hike.className = 'towncard';
-        hike.setAttribute('id', brycehikes[i].hikeName);
+        hike.setAttribute('id', saltlakehikes[i].hikeName);
         hike.addEventListener('click', (e) => {
             console.log(e.target.id);
         });
-        h3.textContent = brycehikes[i].hikeName;
+        h3.textContent = saltlakehikes[i].hikeName;
         //div.setAttribute('id', 'showDetails');
-        //details.textContent = brycehikes[i].details;
+        //details.textContent = archeshikes[i].details;
         //details.setAttribute('id', 'detailClick');
-        //details.className = 'Details';
-        location.textContent = brycehikes[i].location;
-        difficulty.textContent =  'Difficulty: ' + brycehikes[i].difficulty;
-        length.textContent =  'Length: ' + brycehikes[i].length;
-        elevation.textContent =  'Elevation: ' + brycehikes[i].elevation;
-        description.textContent = brycehikes[i].description;
+        location.textContent = saltlakehikes[i].location;
+        difficulty.textContent =  'Difficulty: ' + saltlakehikes[i].difficulty;
+        length.textContent =  'Length: ' + saltlakehikes[i].length;
+        elevation.textContent =  'Elevation: ' + saltlakehikes[i].elevation;
+        description.textContent = saltlakehikes[i].description;
+        
         //Merge them together
         hike.appendChild(span);
         span.appendChild(h3);
@@ -45,7 +44,7 @@ fetch(BrequestURL)
         div.appendChild(description);
         
         //Attaching to the page
-        document.querySelector('div.BhikeDisplay').appendChild(hike);
+        document.querySelector('div.ShikeDisplay').appendChild(hike);
     
     }
 });

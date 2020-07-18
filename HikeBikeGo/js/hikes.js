@@ -5,34 +5,20 @@ fetch(ArequestURL)
     })
     .then(function (jsonObject) {
         const archeshikes = jsonObject['archeshikes'];
-        //console.table(jsonObject); //temporary testing
         for (let i = 0; i < archeshikes.length; i++) { 
             let hike = document.createElement('div');
             let h3 = document.createElement('h3'); //Hike Names
             h3.setAttribute('id', archeshikes[i].hikeName);
-            //h3.setAttribute('id', 'favorite'); //id of 'favorite' set to h3 hike names
             h3.addEventListener('click', (e) => {
                 console.log(e.target.id);
             });
-            //let h4 = document.createElement('h4'); //'Show Details'
-            //h4.setAttribute('id', archeshikes[i].details);
-            //h4.setAttribute('id', 'showDetails'); //id of 'showDetails' set to h4 show details
-            // h4.addEventListener('click', (e) => {
-            //     console.log(e.target.id);
-            // });
             let h4 = document.createElement('h4'); //'Show Details'
-            h4.setAttribute('id', 'showTheDetails');
+            h4.setAttribute('id', archeshikes[i].details);
             let hike1 = document.createElement('div');
             hike1.setAttribute('id', 'hikeDetails');
             hike1.addEventListener('click', (e) => {
                 console.log(e.target.id);
             });
-            // let h4 = document.createElement('h4'); //'Show Details'
-            // h4.setAttribute('id', 'Details');
-            //h4.setAttribute('id', archeshikes[i].details);
-            // h4.addEventListener('click', (e) => {
-            //     console.log(e.target.id);
-            // });
             let details = document.createElement('p');
             //hike1.className = 'hidden';
             //hike1.className = 'show';
@@ -67,9 +53,19 @@ fetch(ArequestURL)
         }
     });
 
-    // function toggleMenu() {
-    //     document.querySelector('#showHike').classList.toggle('openDetails');
-    //   }
-    //   document.querySelector('#details').addEventListener('click', toggleMenu);
 
+    //h3.setAttribute('id', 'favorite'); //id of 'favorite' set to h3 hike names
+//let h4 = document.createElement('h4'); //'Show Details'
+            //h4.setAttribute('id', archeshikes[i].details);
+            //h4.setAttribute('id', 'showDetails'); //id of 'showDetails' set to h4 show details
+            // h4.addEventListener('click', (e) => {
+            //     console.log(e.target.id);
+            // });
+
+            // let h4 = document.createElement('h4'); //'Show Details'
+            // h4.setAttribute('id', 'Details');
+            //h4.setAttribute('id', archeshikes[i].details);
+            // h4.addEventListener('click', (e) => {
+            //     console.log(e.target.id);
+            // });
     

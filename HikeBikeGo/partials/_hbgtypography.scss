@@ -51,7 +51,7 @@ footer {
 }
 
 //Hikes
-
+//Arches
 .AhikeDisplay h3 {
     font-family: $font5;
 }
@@ -62,12 +62,91 @@ footer {
 .AhikeDisplay p {
     font-family: $font2;
 }
+//Bryce
+.BhikeDisplay h3 {
+    font-family: $font5;
+}
+.BhikeDisplay h4 {
+    font-family: $font2;
+}
 
-.favorite:after {
-        content: ' \Z606';
-        color: yellow;
+.BhikeDisplay p {
+    font-family: $font2;
 }
-.favorite:hover:after {
-    content: ' \Z606';
-    color: yellow;
+
+//Canyonlands
+.CanhikeDisplay h3 {
+    font-family: $font5;
 }
+.CanhikeDisplay h4 {
+    font-family: $font2;
+}
+
+.CanhikeDisplay p {
+    font-family: $font2;
+}
+//Capitol Reef
+.CaphikeDisplay h3 {
+    font-family: $font5;
+}
+.CaphikeDisplay h4 {
+    font-family: $font2;
+}
+
+.CaphikeDisplay p {
+    font-family: $font2;
+}
+//Zion
+.ZhikeDisplay h3 {
+    font-family: $font5;
+}
+.ZhikeDisplay h4 {
+    font-family: $font2;
+}
+
+.ZhikeDisplay p {
+    font-family: $font2;
+}
+//SLC
+.ShikeDisplay h3 {
+    font-family: $font5;
+}
+.ShikeDisplay h4 {
+    font-family: $font2;
+}
+
+.ShikeDisplay p {
+    font-family: $font2;
+}
+//Davis
+.DhikeDisplay h3 {
+    font-family: $font5;
+}
+.DhikeDisplay h4 {
+    font-family: $font2;
+}
+
+.DhikeDisplay p {
+    font-family: $font2;
+}
+//Utah
+.UhikeDisplay h3 {
+    font-family: $font5;
+}
+.UhikeDisplay h4 {
+    font-family: $font2;
+}
+
+.UhikeDisplay p {
+    font-family: $font2;
+}
+
+
+// #favorite.AhikeDisplay:after {
+//         content: ' \Z606';
+//         color: yellow;
+// }
+// #favorite.AhikeDisplay:hover:after {
+//     content: ' \Z606';
+//     color: yellow;
+// }

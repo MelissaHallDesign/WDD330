@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Lato&family=Rammetto+One&family=Source+Sans+Pro&family=Trade+Winds&display=swap");
 body {
   background-color: #65A7CA;
@@ -76,12 +75,109 @@ a:hover {
   background-color: #FFF3D6;
 }
 
-#favorite:after {
-  color: #A31621;
+.BhikeDisplay h3 {
+  color: #FFF3D6;
+  background-color: #E06D06;
 }
 
-#showDetails:after {
+.BhikeDisplay h4 {
   color: #313E50;
+  background-color: #FFC53A;
+}
+
+.BhikeDisplay p {
+  color: #4C3220;
+  background-color: #FFF3D6;
+}
+
+.CanhikeDisplay h3 {
+  color: #FFF3D6;
+  background-color: #E06D06;
+}
+
+.CanhikeDisplay h4 {
+  color: #313E50;
+  background-color: #FFC53A;
+}
+
+.CanhikeDisplay p {
+  color: #4C3220;
+  background-color: #FFF3D6;
+}
+
+.CaphikeDisplay h3 {
+  color: #FFF3D6;
+  background-color: #E06D06;
+}
+
+.CaphikeDisplay h4 {
+  color: #313E50;
+  background-color: #FFC53A;
+}
+
+.CaphikeDisplay p {
+  color: #4C3220;
+  background-color: #FFF3D6;
+}
+
+.ZhikeDisplay h3 {
+  color: #FFF3D6;
+  background-color: #E06D06;
+}
+
+.ZhikeDisplay h4 {
+  color: #313E50;
+  background-color: #FFC53A;
+}
+
+.ZhikeDisplay p {
+  color: #4C3220;
+  background-color: #FFF3D6;
+}
+
+.DhikeDisplay h3 {
+  color: #FFF3D6;
+  background-color: #E06D06;
+}
+
+.DhikeDisplay h4 {
+  color: #313E50;
+  background-color: #FFC53A;
+}
+
+.DhikeDisplay p {
+  color: #4C3220;
+  background-color: #FFF3D6;
+}
+
+.ShikeDisplay h3 {
+  color: #FFF3D6;
+  background-color: #E06D06;
+}
+
+.ShikeDisplay h4 {
+  color: #313E50;
+  background-color: #FFC53A;
+}
+
+.ShikeDisplay p {
+  color: #4C3220;
+  background-color: #FFF3D6;
+}
+
+.UhikeDisplay h3 {
+  color: #FFF3D6;
+  background-color: #E06D06;
+}
+
+.UhikeDisplay h4 {
+  color: #313E50;
+  background-color: #FFC53A;
+}
+
+.UhikeDisplay p {
+  color: #4C3220;
+  background-color: #FFF3D6;
 }
 
 nav ul {
@@ -141,14 +237,88 @@ footer {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.favorite:after {
-  content: " Z606";
-  color: yellow;
+.BhikeDisplay h3 {
+  font-family: "Trade Winds", cursive;
 }
 
-.favorite:hover:after {
-  content: " Z606";
-  color: yellow;
+.BhikeDisplay h4 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.BhikeDisplay p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.CanhikeDisplay h3 {
+  font-family: "Trade Winds", cursive;
+}
+
+.CanhikeDisplay h4 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.CanhikeDisplay p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.CaphikeDisplay h3 {
+  font-family: "Trade Winds", cursive;
+}
+
+.CaphikeDisplay h4 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.CaphikeDisplay p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.ZhikeDisplay h3 {
+  font-family: "Trade Winds", cursive;
+}
+
+.ZhikeDisplay h4 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.ZhikeDisplay p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.ShikeDisplay h3 {
+  font-family: "Trade Winds", cursive;
+}
+
+.ShikeDisplay h4 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.ShikeDisplay p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.DhikeDisplay h3 {
+  font-family: "Trade Winds", cursive;
+}
+
+.DhikeDisplay h4 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.DhikeDisplay p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.UhikeDisplay h3 {
+  font-family: "Trade Winds", cursive;
+}
+
+.UhikeDisplay h4 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.UhikeDisplay p {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -264,71 +434,94 @@ footer {
   margin: 0;
 }
 
-#hikeDetails {
-  display: none;
+.CanhikeDisplay h3 {
+  padding: 15px;
+  margin-bottom: 0;
 }
 
-.show p {
-  display: block;
+.CanhikeDisplay h4 {
+  padding: 5px;
+  margin: 0;
 }
 
-#favorites:after {
-  content: "      ♡";
+.CanhikeDisplay p {
+  padding: 10px;
+  margin: 0;
 }
 
-p#detailClick:after {
-  content: "      →";
+.CaphikeDisplay h3 {
+  padding: 15px;
+  margin-bottom: 0;
 }
 
-div#showDetails {
-  display: block;
+.CaphikeDisplay h4 {
+  padding: 5px;
+  margin: 0;
 }
 
-/*
+.CaphikeDisplay p {
+  padding: 10px;
+  margin: 0;
+}
 
-.herosection = mainsection
-.weathersummary = weathersection
-.weathersummary1 = weatherlabel
-.weathersummary2 = weatherdata
-.weathersummaryheading = weatherheading
-.herosection {
-    position: relative;
+.ZhikeDisplay h3 {
+  padding: 15px;
+  margin-bottom: 0;
+}
 
-    .weathersummary {
-    background-color: hsl(350, 74%, 26%, .75);
-    padding: 5px;
-    max-width: 60%;
-    top: 25px;
-    left: 25px;
-    position: absolute;
-    box-shadow: inset 0 0 5px #e59500;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.ZhikeDisplay h4 {
+  padding: 5px;
+  margin: 0;
 }
-.weathersummary span:nth-child(even){
-    padding-left: 5px;
+
+.ZhikeDisplay p {
+  padding: 10px;
+  margin: 0;
 }
-.weathersummary1 {
-    color: #fafaff;
-    font-size: 15px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
+
+.DhikeDisplay h3 {
+  padding: 15px;
+  margin-bottom: 0;
 }
-.weathersummary2 {
-    color: #e59500;
-    font-size: 15px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+
+.DhikeDisplay h4 {
+  padding: 5px;
+  margin: 0;
 }
-.weathersummaryheading {
-    color: #fafaff;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    grid-column-end: 2 span;
+
+.DhikeDisplay p {
+  padding: 10px;
+  margin: 0;
 }
-*/
+
+.ShikeDisplay h3 {
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.ShikeDisplay h4 {
+  padding: 5px;
+  margin: 0;
+}
+
+.ShikeDisplay p {
+  padding: 10px;
+  margin: 0;
+}
+
+.UhikeDisplay h3 {
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.UhikeDisplay h4 {
+  padding: 5px;
+  margin: 0;
+}
+
+.UhikeDisplay p {
+  padding: 10px;
+  margin: 0;
+}
 
 /*# sourceMappingURL=hbgstyles.css.map */
