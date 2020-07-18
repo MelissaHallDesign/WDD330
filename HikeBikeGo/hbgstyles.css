@@ -367,6 +367,7 @@ nav ul li a {
   height: 100px;
   text-align: center;
   justify-content: center;
+  align-content: center;
 }
 
 footer {
