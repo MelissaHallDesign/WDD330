@@ -10,7 +10,7 @@ fetch(ArequestURL)
         let hike = document.createElement('section');
         let span = document.createElement('span');
         let h3 = document.createElement('h3');
-        h3.setAttribute('class', 'heart'); /////Adds class to h3
+        h3.setAttribute('class', 'heart'); //Adds class to h3
         //let details = document.createElement('p');
         let div = document.createElement('div');
         let location = document.createElement('p');

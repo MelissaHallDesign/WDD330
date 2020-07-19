@@ -208,45 +208,13 @@ footer {
     margin: 0;
 }
 
-
-
-// h3:after {
-//         content: '      \2661';
-       
-//     }
-    h3.heart:after {
-        content: ' \2661';
-    }
-      h3.heart:hover:after,
-      h3.heart.fav:after {
-        content: ' \2661';
-      }
-      h3.heart.fav:hover:after {
-        content: ' \2665';
-      }
-
-
-
-// #hikeDetails {
-//     display: none;
-// }
-// .hidden {
-//     display: none;
-// }
-
-// .show p {
-//     display: block;
-// }
-// .completed:after {
-//     content: '      \2661';
-    //font-size: 30px;
-//}
-// #favorite.AhikeDisplay:after {
-//     content: '      \2661';
-// }
-// p#detailClick:after {
-//     content: '      \2192';
-// }
-// div#showDetails {
-//     display: block;
-// }
+h3.heart:after {
+    content: ' \2665';
+}
+h3.heart:hover:after,
+h3.heart.fav:after {
+    content: ' \2661';
+}
+h3.heart.fav:hover:after {
+    content: ' \2661';
+}

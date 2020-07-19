@@ -182,27 +182,10 @@ h3.heart:after {
 }
 
 h3.heart:hover:after,
-      h3.heart.fav:after {
-          color: $color3;
-      }
+h3.heart.fav:after {
+    color: $color1;
+}
 
-      h3.heart.fav:hover:after {
-          color: $color1;
-      }
-// h3:after {
-//     color: $color3;
-// }
-// h3:hover {
-//     fill: $color1;
-// }
-
-
-// .completed {
-//     color: $color1;
-// }
-// #favorite.AhikeDisplay:after {
-//     color: $color1;
-// }
-// #showDetails:after {
-//     color: $color6;
-// }
+h3.heart.fav:hover:after {
+    color: $color3;
+}

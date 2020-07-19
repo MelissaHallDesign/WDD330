@@ -187,11 +187,11 @@ h3.heart:after {
 
 h3.heart:hover:after,
 h3.heart.fav:after {
-  color: #FFC53A;
+  color: #A31621;
 }
 
 h3.heart.fav:hover:after {
-  color: #A31621;
+  color: #FFC53A;
 }
 
 nav ul {
@@ -540,7 +540,7 @@ footer {
 }
 
 h3.heart:after {
-  content: " ♡";
+  content: " ♥";
 }
 
 h3.heart:hover:after,
@@ -549,7 +549,7 @@ h3.heart.fav:after {
 }
 
 h3.heart.fav:hover:after {
-  content: " ♥";
+  content: " ♡";
 }
 
 /*# sourceMappingURL=hbgstyles.css.map */
