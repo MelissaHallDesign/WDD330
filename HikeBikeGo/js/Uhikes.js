@@ -11,7 +11,6 @@ fetch(UrequestURL)
         let span = document.createElement('span');
         let h3 = document.createElement('h3');
         h3.setAttribute('class', 'heart'); //Adds class to h3
-        //let details = document.createElement('p');
         let div = document.createElement('div');
         let location = document.createElement('p');
         let difficulty = document.createElement('p');
@@ -24,9 +23,6 @@ fetch(UrequestURL)
             console.log(e.target.id);
         });
         h3.textContent = utahhikes[i].hikeName;
-        //div.setAttribute('id', 'showDetails');
-        //details.textContent = archeshikes[i].details;
-        //details.setAttribute('id', 'detailClick');
         location.textContent = utahhikes[i].location;
         difficulty.textContent =  'Difficulty: ' + utahhikes[i].difficulty;
         length.textContent =  'Length: ' + utahhikes[i].length;
@@ -36,7 +32,6 @@ fetch(UrequestURL)
         //Merge them together
         hike.appendChild(span);
         span.appendChild(h3);
-        //span.appendChild(details);
         span.appendChild(div);
         div.appendChild(location);
         div.appendChild(difficulty);

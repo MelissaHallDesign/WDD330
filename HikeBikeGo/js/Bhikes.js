@@ -11,7 +11,6 @@ fetch(BrequestURL)
         let span = document.createElement('span');
         let h3 = document.createElement('h3');
         h3.setAttribute('class', 'heart'); //Adds class to h3
-        //let details = document.createElement('p');
         let div = document.createElement('div');
         let location = document.createElement('p');
         let difficulty = document.createElement('p');
@@ -19,16 +18,11 @@ fetch(BrequestURL)
         let elevation = document.createElement('p');
         let description = document.createElement('p');
         //modify the contents
-        //hike.className = 'towncard';
         hike.setAttribute('id', brycehikes[i].hikeName);
         hike.addEventListener('click', (e) => {
             console.log(e.target.id);
         });
         h3.textContent = brycehikes[i].hikeName;
-        //div.setAttribute('id', 'showDetails');
-        //details.textContent = brycehikes[i].details;
-        //details.setAttribute('id', 'detailClick');
-        //details.className = 'Details';
         location.textContent = brycehikes[i].location;
         difficulty.textContent =  'Difficulty: ' + brycehikes[i].difficulty;
         length.textContent =  'Length: ' + brycehikes[i].length;
@@ -37,7 +31,6 @@ fetch(BrequestURL)
         //Merge them together
         hike.appendChild(span);
         span.appendChild(h3);
-        //span.appendChild(details);
         span.appendChild(div);
         div.appendChild(location);
         div.appendChild(difficulty);
